@@ -11,7 +11,6 @@ export default function Planet({ texture, index, x, y, r=2.5 }) {
     const zDistance = camera.position.z - mesh.current.position.z;
     setZDistance(zDistance);
 
-    // Scale down as it goes far
     const scale = THREE.MathUtils.clamp(
       1 - zDistance / 50,
       0,
@@ -19,7 +18,6 @@ export default function Planet({ texture, index, x, y, r=2.5 }) {
     );
     mesh.current.scale.setScalar(scale);
 
-    // Fade out instead of clustering
     mesh.current.material.opacity = scale;
     mesh.current.material.transparent = false;
     mesh.current.rotation.y += 0.002;

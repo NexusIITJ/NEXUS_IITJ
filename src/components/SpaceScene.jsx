@@ -5,8 +5,11 @@ import { planets } from "../data/planets";
 import StarsBackground from "./StarsBackground";
 import Sun from "./Sun";
 import stars from "/textures/stars.jpg";
+import stars2 from "/textures/stars2.jpg";
+import stars3 from "/textures/stars3.jpg";
 import sun from "/textures/sun.jpg";
 import { MathUtils } from "three";
+import * as THREE from "three";
 
 export default function SpaceScene() {
   const { camera } = useThree();
@@ -41,9 +44,20 @@ export default function SpaceScene() {
     camera.lookAt(0, 0, camera.position.z - 1);
   });
 
+  // const { scene } = useThree();
+
+  // useEffect(() => {
+  //   const loader = new THREE.TextureLoader();
+  //   loader.load(stars3, (texture) => {
+  //     texture.colorSpace = THREE.SRGBColorSpace;
+  //     scene.background = texture;
+  //   });
+  // }, [scene]);
+
   return (
     <>
       <StarsBackground texture={stars} />
+
       <Sun texture={sun} />
 
       <ambientLight intensity={0.4} />

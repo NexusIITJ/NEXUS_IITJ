@@ -6,6 +6,7 @@ import JupiterSection from "./sections/JupiterSection";
 import SaturnSection from "./sections/SaturnSection";
 import UranusSection from "./sections/UranusSection";
 import NeptuneSection from "./sections/NeptuneSection";
+import Playground from "./sections/Playground";
 
 export default function Website() {
   return (
@@ -18,6 +19,7 @@ export default function Website() {
       <SaturnSection />
       <UranusSection />
       <NeptuneSection />
+      <Playground />
     </main>
   );
 }

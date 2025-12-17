@@ -1,11 +1,11 @@
 export const gallery = [
     {
         id: 1,
-        title: "Cosmic Cliffs",
-        image: "https://images-assets.nasa.gov/image/main_image_deep_field_smacs0723/main_image_deep_field_smacs0723~orig.jpg",
-        description: "The Deep Field image from James Webb Space Telescope, showing thousands of galaxies – including the faintest objects ever observed in the infrared.",
-        source: "NASA/ESA/CSA",
-        tag: "Deep Field"
+        title: "Perseverance at Cheyava Falls",
+        image: "https://images-assets.nasa.gov/image/PIA26344/PIA26344~orig.jpg",
+        description: "NASA's Perseverance rover captured this selfie on July 23, 2024, at a rock nicknamed 'Cheyava Falls' that may hide signs of ancient life.",
+        source: "NASA/JPL-Caltech/MSSS",
+        tag: "Mars Rover"
     },
     {
         id: 2,
@@ -57,11 +57,11 @@ export const gallery = [
     },
     {
         id: 8,
-        title: "International Space Station",
-        image: "https://images-assets.nasa.gov/image/iss070e004040/iss070e004040~orig.jpg",
-        description: "The ISS orbiting above the blue waters of the Pacific Ocean, serving as humanity's home in orbit.",
-        source: "NASA",
-        tag: "Human Spaceflight"
+        title: "Andromeda Galaxy",
+        image: "https://images-assets.nasa.gov/image/PIA15416/PIA15416~orig.jpg",
+        description: "The sharpest image ever taken of the Andromeda Galaxy, capturing over 100 million stars and thousands of star clusters.",
+        source: "NASA/ESA/J. Dalcanton",
+        tag: "Galaxy"
     },
     {
         id: 9,

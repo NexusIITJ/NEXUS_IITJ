@@ -34,7 +34,7 @@ export default function Gallery() {
                 <h1 className="text-4xl font-bold mb-2 text-white">
                     Image Data Archive
                 </h1>
-                <p className="text-[var(--text-muted)] font-mono mb-8 border-b border-[rgba(255,255,255,0.1)] pb-4">
+                <p className="text-[var(--text-muted)] font-mono mb-8">
                     /secure/gallery/public-access
                 </p>
 
@@ -137,11 +137,11 @@ function TiltCard({ item, onClick }) {
                 />
 
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
 
                 <div
-                    className="absolute inset-x-0 bottom-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100"
+                    className="absolute inset-x-0 bottom-0 p-6 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100"
                     style={{ transform: "translateZ(20px)" }}
                 >
                     <p className="text-[var(--accent-blue)] font-mono text-xs mb-1 tracking-widest uppercase shadow-black drop-shadow-md">

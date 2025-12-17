@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+:root {
+  --bg-dark: #000000;
+  --bg-card: #1a1f3a;
+  --bg-darker: #050812;
+
+  --text-white: #ffffff;
+  --text-gray: #9ca3af;
+  --text-muted: #6b7280;
+
+  --accent-blue: #60a5fa;
+  --accent-hover: #3b82f6;
+  --border-subtle: rgba(255, 255, 255, 0.1);
+}
+
 html,
 body,
 #root {
@@ -7,4 +21,5 @@ body,
   padding: 0;
   height: 100%;
   background: transparent;
+  color: var(--text-white);
 }

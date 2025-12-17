@@ -1,38 +1,28 @@
-import { useFrame, useLoader, useThree } from "@react-three/fiber";
-import * as THREE from "three";
 import { useRef } from "react";
+import { useFrame } from "@react-three/fiber";
+import { Stars } from "@react-three/drei";
 
-export default function StarsBackground({ texture }) {
-  const mesh = useRef();
-  const map = useLoader(THREE.TextureLoader, texture);
-  const { camera } = useThree();
+export default function StarsBackground() {
+    const starsRef = useRef();
 
-  // Improve texture quality
-  map.wrapS = map.wrapT = THREE.RepeatWrapping;
-  map.anisotropy = 8;
+    useFrame((state, delta) => {
+        if (starsRef.current) {
+            starsRef.current.rotation.y += delta * 0.05;
+            starsRef.current.rotation.x += delta * 0.01;
+        }
+    });
 
-  useFrame((state, delta) => {
-    if (!mesh.current) return;
-
-    mesh.current.position.copy(camera.position);
-
-    mesh.current.rotation.y += delta * 0.005;
-    mesh.current.rotation.x += delta * 0.001;
-    map.offset.x += delta * 0.00002;
-    map.offset.y += delta * 0.00001;
-    mesh.current.material.opacity =
-      0.9 + Math.sin(state.clock.elapsedTime * 0.2) * 0.05;
-  });
-
-  return (
-    <mesh ref={mesh}>
-      <sphereGeometry args={[100, 64, 64]} />
-      <meshBasicMaterial
-        map={map}
-        side={THREE.BackSide}
-        toneMapped={false}
-      />
-
-    </mesh>
-  );
+    return (
+        <group ref={starsRef}>
+            <Stars
+                radius={100}
+                depth={50}
+                count={5000}
+                factor={4}
+                saturation={0}
+                fade
+                speed={1}
+            />
+        </group>
+    );
 }

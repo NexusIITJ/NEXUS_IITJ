@@ -50,7 +50,7 @@ export default function Events() {
                                     exit={{ opacity: 0, scale: 0.9 }}
                                     transition={{ duration: 0.3 }}
                                     key={event.id}
-                                    className="group relative bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] overflow-hidden hover:border-[var(--accent-blue)] transition-colors duration-300 hover:shadow-xl"
+                                    className="group relative bg-gradient-to-br from-[var(--bg-card)] to-[var(--bg-darker)] rounded-xl border border-[var(--border-subtle)] overflow-hidden hover:border-[var(--accent-blue)] transition-colors duration-300 hover:shadow-xl"
                                 >
                                     <div className="md:flex h-full">
                                         <div className="md:w-1/3 h-48 md:h-auto overflow-hidden">

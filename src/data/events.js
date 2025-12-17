@@ -30,7 +30,7 @@ export const events = [
   {
     id: 2,
     title: "Guest Lecture: Mars Colonization",
-    description: "Dr. Sarah Chen from ISRO discusses the challenges and roadmap for human settlements on the Red Planet.",
+    description: "Dr. lele from ISRO discusses the challenges and roadmap for human settlements on the Red Planet.",
     date: "2024-11-15T14:00:00",
     location: "Lecture Hall A",
     image: "https://images.unsplash.com/photo-1614728853913-1e2221eb0a63",

@@ -28,7 +28,7 @@ export default function Gallery() {
 
     return (
         <div className="min-h-screen pt-28 pb-20 px-4 flex flex-col items-center relative z-10">
-            {/* Gallery Header */}
+
             <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ export default function Gallery() {
                 </div>
             </motion.div>
 
-            {/* Masonry-style Grid */}
+
             <div className="w-full max-w-7xl">
                 <motion.div
                     variants={containerVariants}
@@ -67,7 +67,7 @@ export default function Gallery() {
                 </motion.div>
             </div>
 
-            {/* Immersive Lightbox */}
+
             <AnimatePresence>
                 {selectedId && (
                     <Lightbox
@@ -93,7 +93,7 @@ function TiltCard({ item, onClick }) {
     const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["5deg", "-5deg"]);
     const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["-5deg", "5deg"]);
 
-    // Holographic shine effect
+
     const shineX = useTransform(mouseXSpring, [-0.5, 0.5], ["0%", "200%"]);
     const shineOpacity = useTransform(mouseXSpring, [-0.5, 0.5], [0, 0.4]);
 
@@ -129,7 +129,7 @@ function TiltCard({ item, onClick }) {
                 className="relative overflow-hidden rounded-xl bg-[var(--bg-card)] border border-[var(--glass-border)] group-hover:border-[var(--accent-cyan)] transition-colors duration-500 shadow-2xl"
                 style={{ transformStyle: "preserve-3d" }}
             >
-                {/* Image */}
+
                 <div className="relative overflow-hidden">
                     <img
                         src={item.image}
@@ -138,11 +138,11 @@ function TiltCard({ item, onClick }) {
                         loading="lazy"
                     />
 
-                    {/* Scanner Line Effect */}
+
                     <div className="absolute top-0 left-0 w-full h-[2px] bg-[var(--accent-cyan)] opacity-0 group-hover:opacity-100 group-hover:animate-scan shadow-[0_0_10px_var(--accent-cyan)] pointer-events-none" />
                 </div>
 
-                {/* Holographic Shine Gradient */}
+
                 <motion.div
                     className="absolute inset-0 pointer-events-none z-10 bg-gradient-to-tr from-transparent via-white to-transparent"
                     style={{
@@ -153,7 +153,7 @@ function TiltCard({ item, onClick }) {
                     }}
                 />
 
-                {/* Overlay Metadata */}
+
                 <div
                     className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300"
                     style={{ transform: "translateZ(30px)" }}
@@ -181,7 +181,7 @@ function Lightbox({ item, onClose }) {
             className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-xl p-4 md:p-10"
             onClick={onClose}
         >
-            {/* Close Button */}
+
             <button
                 onClick={onClose}
                 className="absolute top-6 right-6 z-50 p-2 rounded-full hover:bg-white/10 transition-colors group"
@@ -196,7 +196,7 @@ function Lightbox({ item, onClose }) {
                 onClick={(e) => e.stopPropagation()}
                 className="w-full max-w-6xl max-h-full grid grid-cols-1 md:grid-cols-3 gap-0 bg-[var(--bg-darker)] rounded-2xl overflow-hidden border border-[var(--border-subtle)] shadow-[0_0_50px_rgba(0,0,0,0.8)] relative"
             >
-                {/* Image Section */}
+
                 <div className="md:col-span-2 relative bg-black flex items-center justify-center p-4">
                     <img
                         src={item.image}
@@ -208,9 +208,9 @@ function Lightbox({ item, onClose }) {
                     </div>
                 </div>
 
-                {/* Details Panel */}
+
                 <div className="md:col-span-1 p-8 md:p-10 flex flex-col bg-[var(--bg-card)] border-t md:border-t-0 md:border-l border-[var(--border-subtle)] relative overflow-hidden">
-                    {/* Background Detail */}
+
                     <div className="absolute top-0 right-0 p-32 bg-[var(--accent-cyan)] opacity-5 blur-[100px] pointer-events-none" />
 
                     <div className="mb-8">
@@ -255,12 +255,4 @@ function Lightbox({ item, onClose }) {
     );
 }
 
-// Add this into your global CSS or inside a style tag
-/* 
-@keyframes scan {
-    0% { top: 0%; opacity: 0; }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { top: 100%; opacity: 0; }
-}
-*/
+

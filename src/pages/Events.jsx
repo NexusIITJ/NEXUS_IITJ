@@ -12,7 +12,7 @@ export default function Events() {
 
     return (
         <div className="min-h-screen pt-28 pb-20 px-4 md:px-8 flex flex-col items-center relative overflow-hidden">
-            {/* Header Section */}
+
             <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ export default function Events() {
                 </p>
             </motion.div>
 
-            {/* Filter Control Board */}
+
             <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -62,7 +62,7 @@ export default function Events() {
                 ))}
             </motion.div>
 
-            {/* Timeline / Event Stream */}
+
             <motion.div layout className="w-full max-w-5xl space-y-24 relative z-10">
                 <AnimatePresence mode="popLayout">
                     {filteredEvents.length > 0 ? (
@@ -99,7 +99,7 @@ function EventCard({ event, index }) {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className={`flex flex-col md:flex-row gap-8 md:gap-16 items-center ${isEven ? '' : 'md:flex-row-reverse'}`}
         >
-            {/* Holographic Image Container */}
+
             <div className="w-full md:w-1/2 group relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-[var(--accent-blue)] to-[var(--accent-purple)] rounded-2xl opacity-20 group-hover:opacity-40 blur transition-opacity duration-500" />
                 <div className="relative rounded-2xl overflow-hidden glass-panel border-[var(--glass-border)] aspect-video">
@@ -110,7 +110,7 @@ function EventCard({ event, index }) {
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 filter brightness-90 group-hover:brightness-110"
                     />
 
-                    {/* HUD Overlay details on image */}
+
                     <div className="absolute top-4 left-4 z-20 flex gap-2">
                         <span className={`
                             px-2 py-1 text-[10px] font-mono font-bold uppercase tracking-wider backdrop-blur-md rounded border
@@ -124,7 +124,7 @@ function EventCard({ event, index }) {
                 </div>
             </div>
 
-            {/* Data Readout */}
+
             <div className={`w-full md:w-1/2 flex flex-col ${isEven ? 'md:items-start text-left' : 'md:items-end md:text-right'}`}>
                 <div className="flex items-center gap-3 mb-2 opacity-70">
                     <span className="w-2 h-2 rounded-full bg-[var(--accent-blue)] animate-pulse" />

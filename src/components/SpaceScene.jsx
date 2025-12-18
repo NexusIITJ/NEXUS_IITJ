@@ -32,7 +32,7 @@ export default function SpaceScene({ isHome }) {
     }, []);
 
     useFrame(() => {
-        if (!isHome) return; // Optional: stop camera movement logic if not on home
+        if (!isHome) return; // stop camera movement logic if not on home
 
         const TOTAL_DISTANCE = 8 * (planets.length - 1);
         const targetZ = scrollT * TOTAL_DISTANCE + 15;

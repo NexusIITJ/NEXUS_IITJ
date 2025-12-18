@@ -1,17 +1,57 @@
 @import "tailwindcss";
 
 :root {
-  --bg-dark: #000000;
-  --bg-card: #12121a;
+  --bg-dark: #030305;
+  --bg-card: rgba(20, 20, 35, 0.6);
   --bg-darker: #050812;
+
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-highlight: rgba(255, 255, 255, 0.15);
 
   --text-white: #ffffff;
   --text-gray: #9ca3af;
   --text-muted: #6b7280;
+  --text-highlight: #e0e7ff;
 
   --accent-blue: #60a5fa;
-  --accent-hover: #3b82f6;
-  --border-subtle: rgba(255, 255, 255, 0.1);
+  --accent-purple: #a855f7;
+  --accent-cyan: #22d3ee;
+  --accent-glow: 0 0 20px rgba(96, 165, 250, 0.3);
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --transition-slow: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.text-glow {
+  text-shadow: 0 0 15px rgba(96, 165, 250, 0.5);
+}
+
+@keyframes scan {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
 }
 
 html,

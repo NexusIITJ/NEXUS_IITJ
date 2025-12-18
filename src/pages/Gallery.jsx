@@ -158,7 +158,7 @@ function TiltCard({ item, onClick }) {
                     className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300"
                     style={{ transform: "translateZ(30px)" }}
                 >
-                    <div className="transform translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-300">
+                    <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                         <p className="text-[var(--accent-cyan)] font-mono text-[10px] tracking-widest uppercase mb-1">
                             {item.tag} // ID: {item.id.toString().padStart(4, '0')}
                         </p>

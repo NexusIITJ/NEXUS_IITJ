@@ -1,0 +1,597 @@
+[
+  {
+    "date": "2025-01-10",
+    "title": "Venus Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Venus reaches greatest eastern elongation of 47.2 degrees from the Sun. This is the best time to view Venus since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2025-01-16",
+    "title": "Mars at Opposition",
+    "type": "planetary-opposition",
+    "description": "Mars will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2025-03-08",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 18.2 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2025-03-14",
+    "title": "Total Lunar Eclipse",
+    "type": "lunar-eclipse",
+    "description": "A lunar eclipse happens when Earth moves between the Sun and the Moon, casting Earth’s shadow on the Moon. Depending on the alignment, the Moon may darken, turn copper-red (“blood moon”), or be partially shadowed. Peak time: 06:58 UTC.",
+    "intensity": "High"
+  },
+  {
+    "date": "2025-04-21",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 27.4 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2025-06-01",
+    "title": "Venus Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Venus reaches greatest western elongation of 45.9 degrees from the Sun. This is the best time to view Venus since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2025-07-04",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 25.9 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2025-08-19",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 18.6 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2025-09-07",
+    "title": "Total Lunar Eclipse",
+    "type": "lunar-eclipse",
+    "description": "A lunar eclipse happens when Earth moves between the Sun and the Moon, casting Earth’s shadow on the Moon. Depending on the alignment, the Moon may darken, turn copper-red (“blood moon”), or be partially shadowed. Peak time: 18:11 UTC.",
+    "intensity": "High"
+  },
+  {
+    "date": "2025-09-21",
+    "title": "Saturn at Opposition",
+    "type": "planetary-opposition",
+    "description": "Saturn will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2025-09-23",
+    "title": "Neptune at Opposition",
+    "type": "planetary-opposition",
+    "description": "Neptune will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2025-10-29",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 23.9 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2025-11-21",
+    "title": "Uranus at Opposition",
+    "type": "planetary-opposition",
+    "description": "Uranus will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2025-12-07",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 20.7 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2026-01-10",
+    "title": "Jupiter at Opposition",
+    "type": "planetary-opposition",
+    "description": "Jupiter will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2026-02-19",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 18.1 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2026-03-03",
+    "title": "Total Lunar Eclipse",
+    "type": "lunar-eclipse",
+    "description": "A lunar eclipse happens when Earth moves between the Sun and the Moon, casting Earth’s shadow on the Moon. Depending on the alignment, the Moon may darken, turn copper-red (“blood moon”), or be partially shadowed. Peak time: 11:33 UTC.",
+    "intensity": "High"
+  },
+  {
+    "date": "2026-04-03",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 27.8 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2026-06-15",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 24.5 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2026-08-02",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 19.5 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2026-08-15",
+    "title": "Venus Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Venus reaches greatest eastern elongation of 45.9 degrees from the Sun. This is the best time to view Venus since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2026-08-28",
+    "title": "Partial Lunar Eclipse",
+    "type": "lunar-eclipse",
+    "description": "A lunar eclipse happens when Earth moves between the Sun and the Moon, casting Earth’s shadow on the Moon. Depending on the alignment, the Moon may darken, turn copper-red (“blood moon”), or be partially shadowed. Peak time: 04:12 UTC.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2026-09-26",
+    "title": "Neptune at Opposition",
+    "type": "planetary-opposition",
+    "description": "Neptune will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2026-10-04",
+    "title": "Saturn at Opposition",
+    "type": "planetary-opposition",
+    "description": "Saturn will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2026-10-12",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 25.2 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2026-11-20",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 19.6 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2026-11-25",
+    "title": "Uranus at Opposition",
+    "type": "planetary-opposition",
+    "description": "Uranus will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2027-01-03",
+    "title": "Venus Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Venus reaches greatest western elongation of 47.0 degrees from the Sun. This is the best time to view Venus since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2027-02-03",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 18.3 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2027-02-11",
+    "title": "Jupiter at Opposition",
+    "type": "planetary-opposition",
+    "description": "Jupiter will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2027-02-19",
+    "title": "Mars at Opposition",
+    "type": "planetary-opposition",
+    "description": "Mars will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2027-02-20",
+    "title": "Penumbral Lunar Eclipse",
+    "type": "lunar-eclipse",
+    "description": "A lunar eclipse happens when Earth moves between the Sun and the Moon, casting Earth’s shadow on the Moon. Depending on the alignment, the Moon may darken, turn copper-red (“blood moon”), or be partially shadowed. Peak time: 23:12 UTC.",
+    "intensity": "Low"
+  },
+  {
+    "date": "2027-03-17",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 27.6 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2027-05-28",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 22.9 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2027-07-15",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 20.7 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2027-07-18",
+    "title": "Penumbral Lunar Eclipse",
+    "type": "lunar-eclipse",
+    "description": "A lunar eclipse happens when Earth moves between the Sun and the Moon, casting Earth’s shadow on the Moon. Depending on the alignment, the Moon may darken, turn copper-red (“blood moon”), or be partially shadowed. Peak time: 16:02 UTC.",
+    "intensity": "Low"
+  },
+  {
+    "date": "2027-08-17",
+    "title": "Penumbral Lunar Eclipse",
+    "type": "lunar-eclipse",
+    "description": "A lunar eclipse happens when Earth moves between the Sun and the Moon, casting Earth’s shadow on the Moon. Depending on the alignment, the Moon may darken, turn copper-red (“blood moon”), or be partially shadowed. Peak time: 07:13 UTC.",
+    "intensity": "Low"
+  },
+  {
+    "date": "2027-09-24",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 26.3 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2027-09-28",
+    "title": "Neptune at Opposition",
+    "type": "planetary-opposition",
+    "description": "Neptune will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2027-10-18",
+    "title": "Saturn at Opposition",
+    "type": "planetary-opposition",
+    "description": "Saturn will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2027-11-04",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 18.8 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2027-11-30",
+    "title": "Uranus at Opposition",
+    "type": "planetary-opposition",
+    "description": "Uranus will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2028-01-12",
+    "title": "Partial Lunar Eclipse",
+    "type": "lunar-eclipse",
+    "description": "A lunar eclipse happens when Earth moves between the Sun and the Moon, casting Earth’s shadow on the Moon. Depending on the alignment, the Moon may darken, turn copper-red (“blood moon”), or be partially shadowed. Peak time: 04:13 UTC.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2028-01-17",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 18.8 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2028-02-27",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 26.9 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2028-03-12",
+    "title": "Jupiter at Opposition",
+    "type": "planetary-opposition",
+    "description": "Jupiter will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2028-03-22",
+    "title": "Venus Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Venus reaches greatest eastern elongation of 46.1 degrees from the Sun. This is the best time to view Venus since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2028-05-09",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 21.4 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2028-06-26",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 22.2 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2028-07-06",
+    "title": "Partial Lunar Eclipse",
+    "type": "lunar-eclipse",
+    "description": "A lunar eclipse happens when Earth moves between the Sun and the Moon, casting Earth’s shadow on the Moon. Depending on the alignment, the Moon may darken, turn copper-red (“blood moon”), or be partially shadowed. Peak time: 18:19 UTC.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2028-08-10",
+    "title": "Venus Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Venus reaches greatest western elongation of 45.8 degrees from the Sun. This is the best time to view Venus since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2028-09-06",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 27.1 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2028-09-30",
+    "title": "Neptune at Opposition",
+    "type": "planetary-opposition",
+    "description": "Neptune will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2028-10-17",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 18.2 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2028-10-30",
+    "title": "Saturn at Opposition",
+    "type": "planetary-opposition",
+    "description": "Saturn will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2028-12-03",
+    "title": "Uranus at Opposition",
+    "type": "planetary-opposition",
+    "description": "Uranus will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2028-12-31",
+    "title": "Total Lunar Eclipse",
+    "type": "lunar-eclipse",
+    "description": "A lunar eclipse happens when Earth moves between the Sun and the Moon, casting Earth’s shadow on the Moon. Depending on the alignment, the Moon may darken, turn copper-red (“blood moon”), or be partially shadowed. Peak time: 16:51 UTC.",
+    "intensity": "High"
+  },
+  {
+    "date": "2028-12-31",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 19.6 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2029-02-09",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 25.7 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2029-03-25",
+    "title": "Mars at Opposition",
+    "type": "planetary-opposition",
+    "description": "Mars will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2029-04-12",
+    "title": "Jupiter at Opposition",
+    "type": "planetary-opposition",
+    "description": "Jupiter will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2029-04-21",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 20.1 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2029-06-08",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 23.9 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2029-06-26",
+    "title": "Total Lunar Eclipse",
+    "type": "lunar-eclipse",
+    "description": "A lunar eclipse happens when Earth moves between the Sun and the Moon, casting Earth’s shadow on the Moon. Depending on the alignment, the Moon may darken, turn copper-red (“blood moon”), or be partially shadowed. Peak time: 03:22 UTC.",
+    "intensity": "High"
+  },
+  {
+    "date": "2029-08-19",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 27.4 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2029-10-01",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 17.9 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2029-10-02",
+    "title": "Neptune at Opposition",
+    "type": "planetary-opposition",
+    "description": "Neptune will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2029-10-27",
+    "title": "Venus Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Venus reaches greatest eastern elongation of 47.0 degrees from the Sun. This is the best time to view Venus since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2029-11-13",
+    "title": "Saturn at Opposition",
+    "type": "planetary-opposition",
+    "description": "Saturn will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2029-12-08",
+    "title": "Uranus at Opposition",
+    "type": "planetary-opposition",
+    "description": "Uranus will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2029-12-14",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 20.6 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2029-12-20",
+    "title": "Total Lunar Eclipse",
+    "type": "lunar-eclipse",
+    "description": "A lunar eclipse happens when Earth moves between the Sun and the Moon, casting Earth’s shadow on the Moon. Depending on the alignment, the Moon may darken, turn copper-red (“blood moon”), or be partially shadowed. Peak time: 22:41 UTC.",
+    "intensity": "High"
+  },
+  {
+    "date": "2030-01-22",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 24.4 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2030-03-17",
+    "title": "Venus Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Venus reaches greatest western elongation of 46.6 degrees from the Sun. This is the best time to view Venus since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2030-04-04",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 19.1 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2030-05-13",
+    "title": "Jupiter at Opposition",
+    "type": "planetary-opposition",
+    "description": "Jupiter will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2030-05-21",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 25.6 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2030-06-15",
+    "title": "Partial Lunar Eclipse",
+    "type": "lunar-eclipse",
+    "description": "A lunar eclipse happens when Earth moves between the Sun and the Moon, casting Earth’s shadow on the Moon. Depending on the alignment, the Moon may darken, turn copper-red (“blood moon”), or be partially shadowed. Peak time: 18:33 UTC.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2030-08-02",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 27.3 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2030-09-15",
+    "title": "Mercury Greatest Western Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest western elongation of 17.9 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the morning sky. Look for the planet low in the eastern sky just before sunrise.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2030-10-05",
+    "title": "Neptune at Opposition",
+    "type": "planetary-opposition",
+    "description": "Neptune will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2030-11-26",
+    "title": "Mercury Greatest Eastern Elongation",
+    "type": "planetary-elongation",
+    "description": "The planet Mercury reaches greatest eastern elongation of 21.8 degrees from the Sun. This is the best time to view Mercury since it will be at its highest point above the horizon in the evening sky. Look for the bright planet in the western sky after sunset.",
+    "intensity": "Medium"
+  },
+  {
+    "date": "2030-11-27",
+    "title": "Saturn at Opposition",
+    "type": "planetary-opposition",
+    "description": "Saturn will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  },
+  {
+    "date": "2030-12-09",
+    "title": "Penumbral Lunar Eclipse",
+    "type": "lunar-eclipse",
+    "description": "A lunar eclipse happens when Earth moves between the Sun and the Moon, casting Earth’s shadow on the Moon. Depending on the alignment, the Moon may darken, turn copper-red (“blood moon”), or be partially shadowed. Peak time: 22:27 UTC.",
+    "intensity": "Low"
+  },
+  {
+    "date": "2030-12-12",
+    "title": "Uranus at Opposition",
+    "type": "planetary-opposition",
+    "description": "Uranus will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long.",
+    "intensity": "High"
+  }
+]

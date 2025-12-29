@@ -10,6 +10,7 @@ const Gallery = lazy(() => import("./pages/Gallery"));
 const About = lazy(() => import("./pages/About"));
 const Team = lazy(() => import("./pages/Team"));
 const CalendarPage = lazy(() => import("./pages/CalendarPage"));
+const ISSTracker = lazy(() => import("./pages/ISSTracker"));
 
 function Layout() {
   const location = useLocation();
@@ -57,6 +58,7 @@ function Layout() {
           <Route path="/team" element={<Team />} />
           <Route path="/calendar" element={<CalendarPage />} />
           <Route path="/competitions" element={<PlaceholderPage title="Competitions" />} />
+          <Route path="/ISSTracker" element={<ISSTracker/>} />
         </Routes>
       </Suspense>
     </>

@@ -24,7 +24,8 @@ export default function Navbar() {
             path: "#",
             dropdown: [
                 { name: "Astronomy Calendar", path: "/calendar" },
-                { name: "Competitions", path: "/competitions" }
+                { name: "Competitions", path: "/competitions" },
+                { name: "Live ISS Tracker", path: "/ISSTracker" }
             ]
         }
     ];

@@ -26,7 +26,7 @@ export default function Navbar() {
                 { name: "Astronomy Calendar", path: "/calendar" },
                 { name: "Competitions", path: "/competitions" },
                 { name: "Live ISS Tracker", path: "/ISSTracker" },
-                { name: "Live Solar Sytem", path: "/NASAEyes" }
+                { name: "Live Solar System", path: "/NASAEyes" }
             ]
         }
     ];
@@ -42,7 +42,7 @@ export default function Navbar() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="flex items-center justify-between h-16">
                         {/* Logo */}
-                        <Link to="/" className="flex-shrink-0 font-bold text-3xl text-white tracking-wider">
+                        <Link to="/" className="shrink-0 font-bold text-3xl text-white tracking-wider">
                             NEXUS
                         </Link>
 

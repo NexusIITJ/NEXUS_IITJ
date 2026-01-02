@@ -39,7 +39,7 @@ const CalendarPage = () => {
                 </section>
 
                 {/*Section with APOD */}
-                <section className="relative rounded-3xl overflow-hidden min-h-[400px] flex items-end border border-white/10 group">
+                <section className="relative rounded-3xl overflow-hidden min-h-100 flex items-end border border-white/10 group">
                     <div className="absolute inset-0 z-0">
                         {loading ? (
                             <div className="w-full h-full bg-white/5 animate-pulse flex items-center justify-center">
@@ -54,9 +54,9 @@ const CalendarPage = () => {
                                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
                                 ) : (
-                                    <div className="w-full h-full bg-gradient-to-br from-indigo-900 via-purple-900 to-black" />
+                                    <div className="w-full h-full bg-linear-to-br from-indigo-900 via-purple-900 to-black" />
                                 )}
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a1a] via-[#0a0a1a]/80 to-transparent" />
+                                <div className="absolute inset-0 bg-linear-to-t from-[#0a0a1a] via-[#0a0a1a]/80 to-transparent" />
                             </>
                         )}
                     </div>
@@ -97,7 +97,7 @@ const CalendarPage = () => {
                             )}
 
                             {apod && (
-                                <div className="flex items-center gap-2 text-xs text-gray-400 font-mono border-t border-white/10 pt-4 inline-flex">
+                                <div className="flex items-center gap-2 text-xs text-gray-400 font-mono border-t border-white/10 pt-4">
                                     <Info className="w-4 h-4" />
                                     <span className="uppercase tracking-wider">CREDIT: {apod.copyright || "NASA"}</span>
                                 </div>

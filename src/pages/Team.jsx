@@ -1,6 +1,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { coordinators, coreTeam } from "../data/team";
 import TeamCard from "../components/Team/TeamCard";
+import CoreTeamCard from "../components/Team/CoreTeamCard"
 
 const container = {
   hidden: { opacity: 0 },
@@ -51,12 +52,10 @@ const Team = () => {
       <motion.div
         variants={container}
         custom={reduced}
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10"
       >
         {coordinators.map((member) => (
-          <motion.div key={member.id} variants={item} custom={reduced}>
-            <TeamCard member={member} />
-          </motion.div>
+          <TeamCard key={member.id} member={member} />
         ))}
       </motion.div>
 
@@ -72,29 +71,10 @@ const Team = () => {
       <motion.div
         variants={container}
         custom={reduced}
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10"
       >
-        {coreTeam.map((name, index) => (
-          <motion.div
-            key={index}
-            variants={item}
-            custom={reduced}
-            whileHover={
-              reduced
-                ? {}
-                : {
-                    scale: 1.05,
-                    boxShadow: "0 0 25px rgba(34,211,238,0.6)",
-                  }
-            }
-            className="
-              rounded-xl px-4 py-3 text-center
-              bg-gradient-to-r from-blue-700 to-cyan-400
-              font-semibold
-            "
-          >
-            {name}
-          </motion.div>
+        {coreTeam.map((member) => (
+          <CoreTeamCard key={member.id} member={member} />
         ))}
       </motion.div>
     </motion.section>

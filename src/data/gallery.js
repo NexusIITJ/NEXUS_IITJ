@@ -35,7 +35,7 @@ export const gallery = [
         id: 5,
         title: "The Blue Marble",
         image: "https://images-assets.nasa.gov/image/PIA00114/PIA00114~orig.jpg",
-        description: "The planet Jupiter with its Great Red Spot, a storm larger than Earth that has been raging for hundreds of years.",
+        description: "View of the Earth as seen by the Apollo 17 crew — astronaut Eugene A. Cernan, commander; astronaut Ronald E. Evans, command module pilot; and scientist-astronaut Harrison H. Schmitt, lunar module pilot — traveling toward the moon. This translunar coast photograph extends from the Mediterranean Sea area to the Antarctica South polar ice cap. This is the first time the Apollo trajectory made it possible to photograph the South polar ice cap. Note the heavy cloud cover in the Southern Hemisphere. Almost the entire coastline of Africa is clearly visible. The Arabian Peninsula can be seen at the Northeastern edge of Africa. The large island off the coast of Africa is the Malagasy Republic. The Asian mainland is on the horizon toward the Northeast.",
         source: "NASA/JPL",
         tag: "Jupiter"
     },

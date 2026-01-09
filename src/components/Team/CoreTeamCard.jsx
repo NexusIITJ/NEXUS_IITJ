@@ -9,30 +9,28 @@ import { useRef } from "react";
 
 const placeholderImage = "/placeholder.png";
 
-const TeamCard = ({ member = {} }) => {
+const CoreTeamCard = ({ member = {} }) => {
   const {
     name = "",
-    role = "",
     image,
+    role,
     links = {},
   } = member;
-
   const ref = useRef(null);
   const reduced = useReducedMotion();
 
-  // ORIGINAL TEAM CARD MAGNET VALUES ✅
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
-  const springX = useSpring(x, { stiffness: 200, damping: 20 });
-  const springY = useSpring(y, { stiffness: 200, damping: 20 });
+  const springX = useSpring(x, { stiffness: 180, damping: 18 });
+  const springY = useSpring(y, { stiffness: 180, damping: 18 });
 
   const handleMove = (e) => {
     if (reduced || !ref.current) return;
 
     const rect = ref.current.getBoundingClientRect();
-    x.set((e.clientX - rect.left - rect.width / 2) * 0.15);
-    y.set((e.clientY - rect.top - rect.height / 2) * 0.15);
+    x.set((e.clientX - rect.left - rect.width / 2) * 0.12);
+    y.set((e.clientY - rect.top - rect.height / 2) * 0.12);
   };
 
   const reset = () => {
@@ -53,9 +51,9 @@ const TeamCard = ({ member = {} }) => {
         reduced
           ? {}
           : {
-              scale: 1.04,
-              boxShadow: "0 0 10px rgba(34,211,238,0.35)",
-            }
+            scale: 1.05,
+            boxShadow: "0 0 30px rgba(34,211,238,0.6)",
+          }
       }
       className="
         relative rounded-2xl overflow-hidden
@@ -65,75 +63,72 @@ const TeamCard = ({ member = {} }) => {
       "
     >
       {/* IMAGE */}
-      <div className="relative h-52 overflow-hidden">
+      <div className="relative h-56 overflow-hidden">
         <img
-          src={image || placeholderImage}
-          alt={name}
+          src={member.image || placeholderImage}
+          alt={member.name}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent" />
+
+        {/* CORE BADGE */}
+        {/* <span className="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-semibold
+                         bg-cyan-500/20 text-cyan-300 border border-cyan-400/40 backdrop-blur">
+          Core Team
+        </span> */}
       </div>
 
       {/* CONTENT */}
       <div className="p-6 text-center">
-        <h3 className="text-lg font-semibold text-white mb-1">
-          {name}
+        <h3 className="text-xl font-semibold text-white mb-1">
+          {member.name}
         </h3>
 
-        {role && (
+        {member.role && (
           <p className="text-sm text-cyan-300 mb-5">
-            {role}
+            {member.role}
           </p>
         )}
 
         {/* SOCIAL LINKS */}
         <div className="flex justify-center gap-4">
-          {links.linkedin && (
+          {member.links?.linkedin && (
             <a
-              href={links.linkedin}
+              href={member.links.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                p-2 rounded-full bg-white/5 border border-white/10
-                text-gray-300 hover:text-cyan-300
-                hover:border-cyan-400/40
-                hover:shadow-lg hover:shadow-cyan-400/30
-                transition-all
-              "
+              className="p-2 rounded-full bg-white/5 border border-white/10 text-gray-300
+                         hover:text-cyan-300 hover:border-cyan-400/40
+                         hover:shadow-lg hover:shadow-cyan-400/30
+                         transition-all"
             >
               <Linkedin className="w-5 h-5" />
             </a>
           )}
 
-          {links.instagram && (
+          {member.links?.instagram && (
             <a
-              href={links.instagram}
+              href={member.links.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                p-2 rounded-full bg-white/5 border border-white/10
-                text-gray-300 hover:text-pink-400
-                hover:border-pink-400/40
-                hover:shadow-lg hover:shadow-pink-500/20
-                transition-all
-              "
+              className="p-2 rounded-full bg-white/5 border border-white/10 text-gray-300
+                         hover:text-pink-400 hover:border-pink-400/40
+                         hover:shadow-lg hover:shadow-pink-500/20
+                         transition-all"
             >
               <Instagram className="w-5 h-5" />
             </a>
           )}
 
-          {links.github && (
+          {member.links?.github && (
             <a
-              href={links.github}
+              href={member.links.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                p-2 rounded-full bg-white/5 border border-white/10
-                text-gray-300 hover:text-white
-                hover:border-white/40
-                hover:shadow-lg hover:shadow-white/20
-                transition-all
-              "
+              className="p-2 rounded-full bg-white/5 border border-white/10 text-gray-300
+                         hover:text-white hover:border-white/40
+                         hover:shadow-lg hover:shadow-white/20
+                         transition-all"
             >
               <Github className="w-5 h-5" />
             </a>
@@ -144,4 +139,4 @@ const TeamCard = ({ member = {} }) => {
   );
 };
 
-export default TeamCard;
+export default CoreTeamCard;

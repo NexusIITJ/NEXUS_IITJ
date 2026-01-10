@@ -1,16 +1,16 @@
 import { motion } from 'framer-motion';
-import {categoryStyles } from "../data/projects"
+import {categoryStyles } from "../../data/projects"
 
 const ProjectCard = ({project,isActive,setActiveProject}) => {
 
-    const truncate = (text, length = 90) =>
+    const truncate = (text, length = 200) =>
         text.length > length ? text.slice(0, length) + "…" : text;
     return (
         <motion.button
             key={project.id}
             onClick={() => setActiveProject(project)}
             whileHover={{ x: 6 }}
-            className={`w-full text-left rounded-xl overflow-hidden border transition-all ${isActive
+            className={`w-full text-left text-xl rounded-xl overflow-hidden border transition-all ${isActive
                 ? "bg-blue-500/20 border-blue-500/40 shadow-lg shadow-blue-500/10"
                 : "bg-white/5 border-white/10 hover:bg-white/10"
                 }`}
@@ -25,7 +25,7 @@ const ProjectCard = ({project,isActive,setActiveProject}) => {
 
             <div className="flex gap-4 p-4">
                 {/* Thumbnail */}
-                <div className="relative w-20 h-20 shrink-0 rounded-lg overflow-hidden">
+                <div className="relative w-35 h-35 shrink-0 rounded-lg overflow-hidden">
                     <img
                         src={project.image}
                         alt={project.title}

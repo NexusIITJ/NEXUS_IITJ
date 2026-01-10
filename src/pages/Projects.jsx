@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { ExternalLink, Github, Calendar, Users, ChevronRight } from 'lucide-react';
 import { projects, categories, categoryStyles } from "../data/projects"
-import ProjectCard from '../components/ProjectCard';
-import DetailedProjectCard from '../components/DetailedProjectCard';
+import ProjectCard from '../components/Project/ProjectCard';
+import DetailedProjectCard from '../components/Project/DetailedProjectCard';
 
 // const statuses = ["All", "Ongoing", "Completed"];
 
@@ -110,8 +110,8 @@ export default function Projects() {
 
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 h-[calc(100vh-7rem)]">
-          <div className="lg:col-span-1 overflow-y-auto hide-scrollbar pr-2">
+        <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-8 h-[calc(100vh-7rem)]">
+          <div className="overflow-y-auto hide-scrollbar pr-2 space-y-4">
             {filteredProjects.map((project) => {
               const isActive = activeProject?.id === project.id;
               return (
@@ -125,7 +125,7 @@ export default function Projects() {
             })}
           </div>
 
-          <div className="lg:col-span-2 h-full">
+          <div className="h-full">
             {activeProject ? (
               <DetailedProjectCard activeProject={activeProject} />
             ) : (

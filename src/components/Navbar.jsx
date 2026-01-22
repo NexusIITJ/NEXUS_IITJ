@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 
-export default function Navbar() {
+export default function Navbar({ use3D, setUse3D }) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [expandedMobileDropdown, setExpandedMobileDropdown] = useState(null);
     const location = useLocation();
@@ -24,7 +24,6 @@ export default function Navbar() {
             path: "#",
             dropdown: [
                 { name: "Astronomy Calendar", path: "/calendar" },
-                { name: "Competitions", path: "/competitions" },
                 { name: "Live ISS Tracker", path: "/ISSTracker" },
                 { name: "Live Solar System", path: "/NASAEyes" }
             ]
@@ -48,7 +47,7 @@ export default function Navbar() {
 
                         {/* Desktop Menu */}
                         <div className="hidden md:block">
-                            <div className="ml-10 flex items-baseline space-x-4">
+                            <div className="ml-10 flex items-center space-x-4">
                                 {navItems.map((item) => (
                                     <div key={item.name} className="relative group">
                                         {item.dropdown ? (
@@ -86,6 +85,30 @@ export default function Navbar() {
                                         )}
                                     </div>
                                 ))}
+                                <button
+                                    onClick={() => setUse3D(!use3D)}
+                                    className="relative w-18 h-8 rounded-full bg-white/30 backdrop-blur-md shadow-lg transition-all duration-300"
+                                >
+                                    <span
+                                        className={`absolute top-1 left-1 w-7 h-6 rounded-full bg-white shadow-xl
+                                                            transition-all duration-300 ease-out
+                                                            ${use3D ? "translate-x-9" : "translate-x-0"}`}
+                                    />
+
+                                    {/* Labels */}
+                                    <span
+                                        className={`absolute left-2 top-1/2 -translate-y-1/2 text-sm font-semibold transition-colors
+                                                            ${use3D ? "text-white/60" : "text-black"}`}
+                                    >
+                                        2D
+                                    </span>
+                                    <span
+                                        className={`absolute right-2 top-1/2 -translate-y-1/2 text-sm font-semibold transition-colors
+                                                            ${use3D ? "text-black" : "text-white/60"}`}
+                                    >
+                                        3D
+                                    </span>
+                                </button>
                             </div>
                         </div>
 

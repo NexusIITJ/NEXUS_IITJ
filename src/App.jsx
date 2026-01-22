@@ -52,7 +52,7 @@ function Layout() {
       </div>
 
       <Suspense fallback={null}>
-        <Navbar />
+        <Navbar use3D={use3D} setUse3D={setUse3D} />
       </Suspense>
 
       <Suspense
@@ -71,7 +71,6 @@ function Layout() {
           <Route path="/about" element={<About />} />
           <Route path="/team" element={<Team />} />
           <Route path="/calendar" element={<CalendarPage />} />
-          <Route path="/competitions" element={<PlaceholderPage title="Competitions" />} />
           <Route path="/ISSTracker" element={<ISSTracker/>} />
           <Route path="/NASAEyes" element={<NASAEyes/>} />
         </Routes>

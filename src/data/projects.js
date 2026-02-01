@@ -6,7 +6,7 @@ export const projects = [
     image: "https://drive.google.com/file/d/1gFFcHPrONrNL9-DM7P-SFYCr6IC4WORx/view?usp=sharing",
     category: "AI & Space Tech",
     status: "Finalist",
-    team: ["Shiv Jee Yadav", "Electronics Club"],
+    team: ["Shiv Jee Yadav", "Princy","Chittanoor Sri Raghava","Pratham Karmakar"],
     date: "Oct 2025 - Jan 2026",
     technologies: ["PyTorch", "XGBoost", "LightGBM", "Optuna", "Streamlit", "Python", "SciPy"],
     links: {

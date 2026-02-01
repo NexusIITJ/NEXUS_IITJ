@@ -1,17 +1,17 @@
 export const projects = [
   {
     id: 1,
-    title: "Radio Telescope Development",
-    description: "Building a low-frequency radio telescope array to detect cosmic radio emissions and study pulsars, solar activity, and the Milky Way.",
-    image: "https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=800",
-    category: "Instrumentation",
-    status: "ongoing",
-    team: ["Astrophysics Team", "Electronics Club"],
-    date: "2025 - Present",
-    technologies: ["RF Engineering", "Signal Processing", "Python"],
+    title: "DebriSolver Competition",
+    description: "Developed a Space Traffic Management system to predict collision risks for over 574,000 orbital objects. The solution features a dual-inference AI model combining PyTorch (FT-Transformer) and XGBoost/LightGBM, which achieved 1.0 precision on safety constraints through Optuna optimization. The system includes a scalable data pipeline and an interactive Streamlit dashboard.",
+    image: "https://drive.google.com/file/d/1gFFcHPrONrNL9-DM7P-SFYCr6IC4WORx/view?usp=sharing",
+    category: "AI & Space Tech",
+    status: "Finalist",
+    team: ["Shiv Jee Yadav", "Electronics Club"],
+    date: "Oct 2025 - Jan 2026",
+    technologies: ["PyTorch", "XGBoost", "LightGBM", "Optuna", "Streamlit", "Python", "SciPy"],
     links: {
-      github: "#",
-      documentation: "#"
+      github: "https://github.com/NexusIITJ/Space_Traffic_Management_LEO_Orbit_XGBoost_LightGBM_FT-Transformer",
+      documentation: "https://docs.google.com/document/d/1eAK1UUaP1YGiKEUos7zU81L_ALjUYWZn/edit?usp=sharing&ouid=115143563541440307530&rtpof=true&sd=true"
     }
   },
   {

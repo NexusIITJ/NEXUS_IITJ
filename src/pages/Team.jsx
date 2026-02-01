@@ -46,7 +46,7 @@ const Team = () => {
         custom={reduced}
         className="text-4xl md:text-5xl font-extrabold text-center mb-14"
       >
-        Meet Our Team
+        Meet Our Space Enthusiasts
       </motion.h1>
 
       <motion.div

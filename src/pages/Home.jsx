@@ -149,7 +149,7 @@ export default function Home() {
               What We Do
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Discover the activities and opportunities that make NEXUS the hub for space enthusiasts
+              Explore what NEXUS offers at your own pace — quiet stargazing, practical workshops, and chances to learn and grow.
             </p>
           </motion.div>
 
@@ -183,10 +183,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: "100+", label: "Members" },
-              { number: "50+", label: "Events" },
+              { number: "50+", label: "Members" },
+              { number: "10+", label: "Events" },
               { number: "10+", label: "Projects" },
-              { number: "5+", label: "Years Active" }
+              { number: "10+", label: "Years Active" }
             ].map((stat, index) => (
               <motion.div
                 key={index}

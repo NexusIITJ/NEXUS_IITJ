@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Calendar, Users, ChevronRight } from 'lucide-react';
+import { getRenderableImageUrl } from '../../utils/imageUtils';
 
 export default function DetailedProjectCard({ activeProject }) {
   return (
@@ -13,7 +14,7 @@ export default function DetailedProjectCard({ activeProject }) {
       {/* Image */}
       <div className="relative h-80 overflow-hidden">
         <img
-          src={activeProject.image}
+          src={getRenderableImageUrl(activeProject.image)}
           alt={activeProject.title}
           className="w-full h-full object-cover"
         />

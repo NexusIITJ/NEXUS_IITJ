@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
+import { getRenderableImageUrl } from '../utils/imageUtils';
 
 export default function EventCard({ event, index }) {
     const isEven = index % 2 === 0;
@@ -18,7 +19,7 @@ export default function EventCard({ event, index }) {
                 <div className="relative rounded-2xl overflow-hidden glass-panel border-[var(--glass-border)] aspect-video">
                     <div className="absolute inset-0 bg-[url('/grid-pattern.png')] opacity-10 mix-blend-overlay z-10 pointer-events-none" />
                     <img
-                        src={event.image}
+                        src={getRenderableImageUrl(event.image)}
                         alt={event.title}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 filter brightness-90 group-hover:brightness-110"
                     />

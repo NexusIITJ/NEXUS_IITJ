@@ -6,16 +6,11 @@ import {
 } from "framer-motion";
 import { Github, Linkedin, Instagram } from "lucide-react";
 import { useRef } from "react";
+import { getRenderableImageUrl } from "../../utils/imageUtils";
 
 const placeholderImage = "/placeholder.png";
 
 const CoreTeamCard = ({ member = {} }) => {
-  const {
-    name = "",
-    image,
-    role,
-    links = {},
-  } = member;
   const ref = useRef(null);
   const reduced = useReducedMotion();
 
@@ -65,7 +60,7 @@ const CoreTeamCard = ({ member = {} }) => {
       {/* IMAGE */}
       <div className="relative h-40 overflow-hidden">
         <img
-          src={member.image || placeholderImage}
+          src={getRenderableImageUrl(member.image) || placeholderImage}
           alt={member.name}
           className="w-full h-full object-cover"
         />

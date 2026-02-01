@@ -6,6 +6,7 @@ import {
 } from "framer-motion";
 import { Github, Linkedin, Instagram } from "lucide-react";
 import { useRef } from "react";
+import { getRenderableImageUrl } from "../../utils/imageUtils";
 
 const placeholderImage = "/placeholder.png";
 
@@ -67,7 +68,7 @@ const TeamCard = ({ member = {} }) => {
       {/* IMAGE */}
       <div className="relative h-40 overflow-hidden">
         <img
-          src={image || placeholderImage}
+          src={getRenderableImageUrl(image) || placeholderImage}
           alt={name}
           className="w-full h-full object-cover"
         />

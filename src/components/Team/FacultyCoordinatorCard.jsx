@@ -1,4 +1,5 @@
 import { motion, useReducedMotion } from "framer-motion";
+import { getRenderableImageUrl } from "../../utils/imageUtils";
 
 const placeholderImage = "/placeholder.png";
 
@@ -46,7 +47,7 @@ const FacultyCoordinatorCard = ({ coordinator = {} }) => {
             {/* IMAGE SECTION */}
             <div className="relative w-full sm:w-64 h-64 sm:h-auto shrink-0">
                 <img
-                    src={image || placeholderImage}
+                    src={getRenderableImageUrl(image) || placeholderImage}
                     alt={name}
                     className="w-full h-full object-cover"
                 />

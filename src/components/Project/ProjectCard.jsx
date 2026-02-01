@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import {categoryStyles } from "../../data/projects"
+import { categoryStyles } from "../../data/projects"
+import { getRenderableImageUrl } from '../../utils/imageUtils';
 
-const ProjectCard = ({project,isActive,setActiveProject}) => {
+const ProjectCard = ({ project, isActive, setActiveProject }) => {
 
     const truncate = (text, length = 200) =>
         text.length > length ? text.slice(0, length) + "…" : text;
@@ -27,9 +28,9 @@ const ProjectCard = ({project,isActive,setActiveProject}) => {
                 {/* Thumbnail */}
                 <div className="relative w-35 h-35 shrink-0 rounded-lg overflow-hidden">
                     <img
-                        src={project.image}
+                        src={getRenderableImageUrl(project.image)}
                         alt={project.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                     />
                     <div className="absolute inset-0 bg-black/30" />
 

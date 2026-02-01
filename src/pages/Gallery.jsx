@@ -1,4 +1,4 @@
-import { gallery } from '../data/gallery';
+import { gallery, imageSubmissionForm } from '../data/gallery';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { useState } from 'react';
 import Lightbox from '../components/Lightbox';
@@ -34,6 +34,30 @@ export default function Gallery() {
                     <p className="text-[var(--text-gray)] font-mono text-xs md:text-sm tracking-[0.3em] uppercase opacity-70">
                         // Deep Space Imagery // Source: Club Telescopes
                     </p>
+                </div>
+                <div className='ml-30 lg:ml-70'>
+                    <a
+                        href={imageSubmissionForm}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="
+                            inline-block
+                            px-6 py-3
+                            rounded-xl
+                            border border-white/30
+                            bg-white/20
+                            backdrop-blur-md
+                            text-white font-semibold
+                            shadow-lg
+                            transition-all duration-300 ease-out
+                            hover:scale-105
+                            hover:bg-white/30
+                            hover:shadow-xl
+                            active:scale-95
+                        "
+                    >
+                        Submit your image
+                    </a>
                 </div>
                 <div className="hidden md:block font-mono text-[var(--text-muted)] text-right">
                     <div className="text-2xl font-bold">{gallery.length}</div>

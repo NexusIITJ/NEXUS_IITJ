@@ -120,3 +120,5 @@ export const gallery = [
         tag: "Europa"
     }
 ];
+
+export const imageSubmissionForm="";

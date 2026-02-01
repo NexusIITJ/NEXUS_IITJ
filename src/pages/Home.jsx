@@ -57,12 +57,12 @@ export default function Home() {
               <div className="flex items-center justify-center gap-4 mb-4">
                 <div className="h-px bg-linear-to-r from-transparent via-blue-500 to-transparent w-24"></div>
                 <p className="text-blue-400 text-xl sm:text-2xl md:text-3xl font-light tracking-wider">
-                  Astronomy Club
+                  Astronomy and Space-Tech Club
                 </p>
                 <div className="h-px bg-linear-to-r from-transparent via-blue-500 to-transparent w-24"></div>
               </div>
               <p className="text-gray-400 text-sm sm:text-base tracking-widest uppercase">
-                IIT Jodhpur
+                Indian Institute of Technology Jodhpur
               </p>
             </motion.div>
 
@@ -73,8 +73,8 @@ export default function Home() {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="text-gray-300 text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto mb-12 leading-relaxed"
             >
-              Exploring the universe through observation, innovation, and collaboration.
-              Join us in our journey to understand the cosmos.
+              Look up, learn more, launch ideas — your cosmic journey starts here.  
+              Join a club that makes the universe feel within reach.
             </motion.p>
 
             {/* CTA Buttons */}

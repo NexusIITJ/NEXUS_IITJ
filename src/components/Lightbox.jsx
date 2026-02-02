@@ -1,5 +1,6 @@
-import {useRef} from 'react';
+import { useRef } from 'react';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { getRenderableImageUrl } from '../utils/imageUtils';
 
 export default function Lightbox({ item, onClose }) {
     return (
@@ -47,7 +48,7 @@ export default function Lightbox({ item, onClose }) {
 
                 <div className="md:col-span-2 relative bg-black flex items-center justify-center p-4">
                     <img
-                        src={item.image}
+                        src={getRenderableImageUrl(item.image)}
                         alt={item.title}
                         className="max-w-full max-h-[80vh] w-auto h-auto object-contain"
                     />
@@ -56,47 +57,63 @@ export default function Lightbox({ item, onClose }) {
                     </div>
                 </div>
 
+                <div className="
+                    md:col-span-1
+                    p-8 md:p-10
+                    flex flex-col
+                    bg-gradient-to-b from-[var(--bg-card)] to-[var(--bg-darker)]
+                    border-t md:border-t-0 md:border-l border-[var(--border-subtle)]
+                    relative overflow-hidden
+                ">
 
-                <div className="md:col-span-1 p-8 md:p-10 flex flex-col bg-[var(--bg-card)] border-t md:border-t-0 md:border-l border-[var(--border-subtle)] relative overflow-hidden">
+                    <div className="
+                        absolute top-0 left-0 w-full h-[2px]
+                        bg-gradient-to-r
+                        from-transparent via-[var(--accent-cyan)] to-transparent
+                        opacity-40
+                    " />
 
-                    <div className="absolute top-0 right-0 p-32 bg-[var(--accent-cyan)] opacity-5 blur-[100px] pointer-events-none" />
+                    <div className="flex flex-col h-full justify-between">
 
-                    <div className="mb-8">
-                        <div className="flex items-center gap-2 mb-4">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent-cyan)]" />
-                            <span className="font-mono text-[10px] text-[var(--accent-cyan)] tracking-widest uppercase">
-                                System Data
-                            </span>
-                        </div>
-                        <h2 className="text-3xl font-bold text-white mb-2 leading-none">{item.title}</h2>
-                        <div className="w-12 h-1 bg-[var(--accent-cyan)] mt-4 mb-6 rounded-full opacity-50" />
-
-                        <p className="text-[var(--text-muted)] leading-relaxed text-sm">
-                            {item.description}
-                        </p>
-                    </div>
-
-                    <div className="mt-auto space-y-4">
-                        <div className="grid grid-cols-2 gap-4 text-xs font-mono text-[var(--text-gray)]">
-                            <div className="p-3 rounded border border-[var(--border-subtle)] bg-white/5">
-                                <div className="uppercase opacity-50 mb-1">Source</div>
-                                <div className="text-white">{item.source}</div>
+                        <div>
+                            <div className="flex items-center gap-2 mb-4">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent-cyan)]" />
+                                <span className="font-mono text-[10px] text-[var(--accent-cyan)] tracking-widest uppercase">
+                                    Image Data
+                                </span>
                             </div>
-                            <div className="p-3 rounded border border-[var(--border-subtle)] bg-white/5">
-                                <div className="uppercase opacity-50 mb-1">Category</div>
-                                <div className="text-[var(--accent-cyan)]">{item.tag}</div>
-                            </div>
+
+                            <h2 className="text-3xl font-bold text-white mb-3 leading-tight">
+                                {item.title}
+                            </h2>
+
+                            <p className="font-mono text-xs tracking-widest uppercase text-[var(--text-gray)]">
+                                {item.credit}
+                            </p>
+
+                            <div className="w-12 h-1 bg-[var(--accent-cyan)] mt-6 rounded-full opacity-50" />
                         </div>
 
+                        {/* Download */}
                         <a
                             href={item.image}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block w-full py-4 bg-white text-black font-bold text-center uppercase tracking-widest text-xs hover:bg-[var(--accent-cyan)] transition-colors duration-300"
+                            download
+                            className="
+                                mt-10
+                                block w-full py-4
+                                bg-white text-black
+                                font-bold text-center
+                                uppercase tracking-widest text-xs
+                                transition-all duration-300
+                                hover:bg-[var(--accent-cyan)]
+                                hover:scale-[1.02]
+                                active:scale-[0.98]
+                            "
                         >
                             Download High-Res
                         </a>
                     </div>
+
                 </div>
             </motion.div>
         </motion.div>

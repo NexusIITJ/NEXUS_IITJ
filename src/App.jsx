@@ -69,7 +69,7 @@ function Layout() {
           <Route path="/gallery" element={<Gallery />} />
 
           <Route path="/about" element={<About />} />
-          <Route path="/team" element={<Team />} />
+          {/* <Route path="/team" element={<Team />} /> */}
           <Route path="/calendar" element={<CalendarPage />} />
           <Route path="/ISSTracker" element={<ISSTracker/>} />
           <Route path="/NASAEyes" element={<NASAEyes/>} />

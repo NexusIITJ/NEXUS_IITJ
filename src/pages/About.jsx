@@ -1,5 +1,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { aboutData } from "../data/about";
+import Team from "./Team";
 
 const container = {
   hidden: { opacity: 0 },
@@ -28,7 +29,7 @@ const About = () => {
 
   return (
     <motion.section
-      className="min-h-screen px-6 py-20 text-white max-w-6xl mx-auto"
+      className="min-h-screen px-6 pt-20 text-white max-w-6xl mx-auto"
       variants={container}
       initial="hidden"
       whileInView="visible"
@@ -54,7 +55,7 @@ const About = () => {
       </motion.p>
 
       {/* Vision */}
-      <motion.div
+      {/* <motion.div
         variants={item}
         custom={reduced}
         className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-8 mb-16"
@@ -65,19 +66,19 @@ const About = () => {
         <p className="text-gray-300 text-center">
           {aboutData.vision}
         </p>
-      </motion.div>
+      </motion.div> */}
 
       {/* Highlights Title */}
-      <motion.h2
+      {/* <motion.h2
         variants={item}
         custom={reduced}
         className="text-2xl font-semibold mb-8 text-center"
       >
         What We Do
-      </motion.h2>
+      </motion.h2> */}
 
       {/* Highlights Grid */}
-      <motion.div
+      {/* <motion.div
         variants={container}
         custom={reduced}
         className="grid grid-cols-1 md:grid-cols-2 gap-6"
@@ -102,7 +103,8 @@ const About = () => {
             </p>
           </motion.div>
         ))}
-      </motion.div>
+      </motion.div> */}
+      <Team/>
     </motion.section>
   );
 };

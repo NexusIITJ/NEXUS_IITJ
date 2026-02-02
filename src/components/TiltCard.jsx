@@ -1,5 +1,6 @@
 import { useRef, useState} from 'react';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { getRenderableImageUrl } from '../utils/imageUtils';
 
 const cardVariants = {
     hidden: { opacity: 0, y: 30, scale: 0.95 },
@@ -65,7 +66,7 @@ export default function TiltCard({ item, onClick }) {
                 <div className="relative overflow-hidden">
 
                     <img
-                        src={item.image}
+                        src={getRenderableImageUrl(item.image)}
                         alt={item.title}
                         loading="lazy"
                         onLoad={() => setLoaded(true)}
@@ -92,18 +93,40 @@ export default function TiltCard({ item, onClick }) {
 
 
                 <div
-                    className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300"
-                    style={{ transform: "translateZ(30px)" }}
-                >
-                    <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                        <p className="text-[var(--accent-cyan)] font-mono text-[10px] tracking-widest uppercase mb-1">
-                            {item.tag} // ID: {item.id.toString().padStart(4, '0')}
-                        </p>
-                        <h3 className="text-xl font-bold text-white leading-tight">
-                            {item.title}
-                        </h3>
-                    </div>
-                </div>
+    className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent
+               flex flex-col justify-end p-6
+               opacity-100 md:opacity-0 md:group-hover:opacity-100
+               transition-opacity duration-300"
+    style={{ transform: "translateZ(30px)" }}
+>
+    <div className="space-y-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+
+        {/* Title */}
+        <h3 className="text-xl font-bold text-white leading-tight">
+            {item.title}
+        </h3>
+
+        {/* Download button */}
+        <a
+            href={item.image}
+            download
+            onClick={(e) => e.stopPropagation()}
+            className="
+                inline-block mt-2
+                px-4 py-2
+                rounded-lg
+                border border-white/30
+                bg-white/10 backdrop-blur-md
+                text-white text-xs font-mono tracking-widest uppercase
+                transition-all duration-300
+                hover:bg-white/20 hover:scale-105
+                active:scale-95
+            "
+        >
+            Download
+        </a>
+    </div>
+</div>
             </motion.div>
         </motion.div>
     );

@@ -33,7 +33,7 @@ const Team = () => {
   return (
     <motion.section
       className="
-        min-h-screen px-6 py-20 text-white max-w-6xl mx-auto
+        min-h-screen px-6 pt-10 pb-20 text-white max-w-6xl mx-auto
       "
       variants={container}
       initial="hidden"
@@ -47,7 +47,7 @@ const Team = () => {
         custom={reduced}
         className="text-4xl md:text-5xl font-extrabold text-center mb-14"
       >
-        Meet Our Space Enthusiasts
+        Our Faculty Advisor
       </motion.h1>
 
       <motion.div
@@ -56,6 +56,14 @@ const Team = () => {
       >
         <FacultyCoordinatorCard coordinator={Faculty} />
       </motion.div>
+
+      <motion.h1
+        variants={item}
+        custom={reduced}
+        className="text-4xl md:text-5xl font-extrabold text-center my-14"
+      >
+        Meet Our Space Enthusiasts
+      </motion.h1>
 
       {/* Coordinators */}
       <motion.h2

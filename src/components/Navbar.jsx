@@ -18,7 +18,7 @@ export default function Navbar({ use3D, setUse3D }) {
         { name: "Events", path: "/events" },
         { name: "Gallery", path: "/gallery" },
         { name: "About Us", path: "/about" },
-        { name: "Team", path: "/team" },
+        // { name: "Team", path: "/team" },
         {
             name: "More",
             path: "#",

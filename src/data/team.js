@@ -223,7 +223,7 @@ export const coreTeam = [
     },
   },
   {
-    id: 15,
+    id: 16,
     name: "Iftikhar Alam",
     role: "Core Member",
     image: "https://drive.google.com/file/d/1n_Vr2HGty5M5hQ4up4Vl7zZ4zdm2Clpx/view?usp=sharing",
@@ -294,7 +294,7 @@ export const webTeam = [
   },
   
   {
-    id: 2,
+    id: 6,
     name: "Anurag Samota",
     role: "Web Team",
     image: "https://drive.google.com/file/d/12k3XVxw4pkDV9GTA6Fm6-Iax5ChOZcJb/view?usp=sharing",
@@ -304,7 +304,7 @@ export const webTeam = [
       github: "https://github.com/anuragsamota",
     },
   }, {
-    id: 3,
+    id: 7,
     name: "Shiv Jee Yadav",
     role: "Coordinator",
     image: "https://drive.google.com/file/d/1Hf436mTHJeXXIiTJh6zOluRFw50j15Pu/view?usp=sharing",

@@ -105,11 +105,11 @@ export const coreTeam = [
     id: 5,
     name: "Pratham Karmakar",
     role: "Core Member",
-    image: "",
+    image: "https://drive.google.com/file/d/1cNArXz1fWxdMFgHbXtAWIEA_tDGLaePe/view?usp=sharing",
     links: {
-      linkedin: "#",
-      instagram: "#",
-      github: "#",
+      linkedin: "https://www.linkedin.com/in/pratham-karmakar-8b2a16322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      instagram: "https://www.instagram.com/pratham_karmakar?igsh=MWgwdzdobnpuN2U1Yw==",
+      github: "https://github.com/PrathamKarmakar",
     },
   },
   {
@@ -127,11 +127,11 @@ export const coreTeam = [
     id: 7,
     name: "Avani Bhadang",
     role: "Core Member",
-    image: "",
+    image: "https://drive.google.com/file/d/1-NK_s1RB-8PagRHicJI5JgH-0uu29pRC/view?usp=sharing",
     links: {
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/avani-bhadang-901bb81bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       instagram: "#",
-      github: "#",
+      github: "https://share.google/SC7H6PUoJoWdgyxxI",
     },
   },
   {
@@ -280,17 +280,7 @@ export const webTeam = [
       github: "https://github.com/anmolm-777",
     },
   },
-   {
-    id: 3,
-    name: "Shiv Jee Yadav",
-    role: "Coordinator",
-    image: "https://drive.google.com/file/d/1Hf436mTHJeXXIiTJh6zOluRFw50j15Pu/view?usp=sharing",
-    links: {
-      linkedin: "https://www.linkedin.com/in/shiv-yadav-ba3547284/",
-      // instagram: "#",
-      github: "https://github.com/ShivJee-Yadav/",
-    },
-  },
+  
   {
     id: 5,
     name: "Divyansh Malik",
@@ -313,7 +303,17 @@ export const webTeam = [
       instagram: "#",
       github: "https://github.com/anuragsamota",
     },
-  },
+  }, {
+    id: 3,
+    name: "Shiv Jee Yadav",
+    role: "Coordinator",
+    image: "https://drive.google.com/file/d/1Hf436mTHJeXXIiTJh6zOluRFw50j15Pu/view?usp=sharing",
+    links: {
+      linkedin: "https://www.linkedin.com/in/shiv-yadav-ba3547284/",
+      // instagram: "#",
+      github: "https://github.com/ShivJee-Yadav/",
+    },
+  }
 ];
 
 export const Faculty = {

@@ -7,7 +7,7 @@ export const projects = [
     category: "AI & Space Tech",
     status: "Finalist",
     team: ["Shiv Jee Yadav", "Princy","Chittanoor Sri Raghava","Pratham Karmakar"],
-    date: "Oct 2025 - Jan 2026",
+    date: "Sep 2025 - Jan 2026",
     technologies: ["PyTorch", "XGBoost", "LightGBM", "Optuna", "Streamlit", "Python", "SciPy"],
     links: {
       github: "https://github.com/NexusIITJ/Space_Traffic_Management_LEO_Orbit_XGBoost_LightGBM_FT-Transformer",
@@ -16,14 +16,14 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Exoplanet Detection Analysis",
-    description: "Analyzing light curves from TESS data to identify potential exoplanets using transit photometry and machine learning algorithms.",
-    image: "https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=800",
-    category: "Research",
-    status: "ongoing",
-    team: ["Data Science Team"],
-    date: "2024 - Present",
-    technologies: ["Python", "TensorFlow", "Astropy"],
+    title: "CANSAT'25 by INn -SPACe",
+    description: "CANSAT by In-SPace is an educational initiative that challenges students to design, build, and operate miniature satellites to simulate real-world space missions. Our team built a CanSAT entirely from scratch, covering all domains including mechanical design, electronics, software, and payload integration. We successfully completed the Preliminary Design Review (PDR) and Critical Design Review (CDR), demonstrating our technical expertise and project management skills. Through dedication and innovation, we advanced to the finals, showcasing our ability to deliver a fully functional satellite system that met mission requirements and inspired future exploration.",
+    image: "https://drive.google.com/file/d/15gy6eDFG6_oDD6h_no5JvJCtB9nDt-dF/view?usp=sharing",
+    category: "National Competition | Innovation Challenge",
+    status: "July 2024 - July 2025",
+    team: ["Abhiroop Bhavsar","Arafat Ahmad Sheikh","Himay Patel","Iha Goyal","Nisarg Upaddhay","Om Kumar","Pujari Mayuri Rajesh","Shiv Jee Yadav","Tanmay Daga"],
+    date: "July 2024 - Oct 2025",
+    technologies: ["Mechanical & Structural Design","Avionics & Sensors","Communication Systems","Onboard Computing & Software" ,"Power Systems","Recovery" ,"Payload"],
     links: {
       github: "#",
       paper: "#"
@@ -31,32 +31,34 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Rocket Propulsion Lab",
-    description: "Designing and testing hybrid rocket engines for potential sounding rocket launches. Focus on fuel efficiency and thrust optimization.",
-    image: "https://images.unsplash.com/photo-1517976487492-5750f3195933?w=800",
-    category: "Rocketry",
-    status: "ongoing",
-    team: ["Propulsion Team"],
-    date: "2025 - Present",
-    technologies: ["CFD Analysis", "CAD Design", "Combustion Testing"],
+    title: "CANSAT'24 by INn -SPACe",
+    description: "CANSAT by In-SPace is an educational initiative that challenges students to design, build, and operate miniature satellites to simulate real-world space missions. Our team built a CanSAT entirely from scratch, covering all domains including mechanical design, electronics, software, and payload integration. We successfully completed the Preliminary Design Review (PDR) and Critical Design Review (CDR), demonstrating our technical expertise and project management skills. Through dedication and innovation, we advanced to the finals, showcasing our ability to deliver a fully functional satellite system that met mission requirements and inspired future exploration.",
+    image: "https://drive.google.com/file/d/15gy6eDFG6_oDD6h_no5JvJCtB9nDt-dF/view?usp=sharing",
+    category: "National Competition | Innovation Challenge",
+    status: "July 2024 - July 2025",
+    team: ["Somshuvra Basu","Pechetti Akhil","Lokesh Tanwar","Tale Sai Saathwik","Shubham Mishra","Sarvesh Baheti","Anupama Birman","Hrishikesh Makwana"],
+    date: "July 2023 - Oct 2024",
+    technologies: ["Mechanical & Structural Design","Avionics & Sensors","Communication Systems","Onboard Computing & Software" ,"Power Systems","Recovery" ,"Payload"],
     links: {
-      documentation: "#"
+      github: "#",
+      paper: "#"
     }
   },
   {
-    id: 4,
-    title: "Deep Sky Astrophotography",
-    description: "Capturing stunning images of nebulae, galaxies, and star clusters using our 8-inch telescope and CCD camera setup.",
-    image: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=800",
-    category: "Observation",
-    status: "ongoing",
-    team: ["Imaging Team"],
-    date: "2023 - Present",
-    technologies: ["Astrophotography", "Image Stacking", "PixInsight"],
-    links: {
-      gallery: "/gallery"
-    }
-  },
+  id: 5,
+  title: "Model Rocketry By IN-SPACe",
+  description: "Model rocketry stands out as a unique educational and engineering pursuit because it transforms core principles of physics, chemistry, and aerodynamics into real-world flight. Our team designed, built, and launched rockets from scratch under the IN-SPACe CanSat and Model Rocketry initiative, mastering propulsion, stability, and recovery systems. By completing PDR and CDR phases and advancing to the finals, we demonstrated how model rocketry bridges classroom theory with practical aerospace innovation."  image: "https://drive.google.com/file/d/1bHt_IruP0ia-dagNTHxu9jPV4z0Wn0xa/view?usp=sharing",
+  category: "Aerospace Engineering",
+  status: "_",
+  team: ["Somshuvra Basu","Lokesh Tanwar","Vinay Tailor","Shubham Mishra","Vikash Kumar","Aaditya Kamble","Shubham Tamboli","Raghav Maliwal"],
+  date: "July 2024 - Mar 2025",
+  technologies: [ "Aerodynamics & Aviation Systems", "Propulsion Technologies", "Avionics & Control Systems", "Structural & Materials Engineering", "Recovery Mechanisms", "Systems Integration" ],
+  links: {
+      github: "#",
+      paper: "#"
+  }
+}
+,
   {
     id: 5,
     title: "Meteor Observation Network",
@@ -84,37 +86,8 @@ export const projects = [
     links: {
       documentation: "#"
     }
-  },
-  {
-    id: 7,
-    title: "Satellite Tracking System",
-    description: "Real-time tracking and visualization of satellites including ISS, communication satellites, and space debris.",
-    image: "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=800",
-    category: "Software",
-    status: "completed",
-    team: ["Development Team"],
-    date: "2024",
-    technologies: ["React", "Three.js", "TLE Data"],
-    links: {
-      github: "#",
-      live: "/ISSTracker"
-    }
-  },
-  {
-    id: 8,
-    title: "Astronomy Event Predictor",
-    description: "Web application providing accurate predictions of celestial events including eclipses, planetary alignments, and meteor showers.",
-    image: "https://images.unsplash.com/photo-1534996858221-380b92700493?w=800",
-    category: "Software",
-    status: "completed",
-    team: ["Development Team"],
-    date: "2024",
-    technologies: ["React", "USNO API", "NASA APIs"],
-    links: {
-      github: "#",
-      live: "/calendar"
-    }
   }
+
 ];
 
 export const categories = ["All", "Research", "Instrumentation", "Rocketry", "Observation", "Software"];

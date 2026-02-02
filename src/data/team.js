@@ -236,8 +236,19 @@ export const coreTeam = [
 ];
 
 export const webTeam = [
+   {
+    id: 0,
+    name: "Luv Valecha",
+    role: "Team Lead",
+    image: "",
+    links: {
+      linkedin: "https://www.linkedin.com/in/luvvalecha/",
+      instagram: "https://www.instagram.com/luv_valecha/",
+      github: "https://github.com/Luv-valecha",
+    },
+  },
   {
-    id: 1,
+    id: 4,
     name: "Udit Chand Narayan",
     role: "Web Team",
     image: "",
@@ -247,18 +258,18 @@ export const webTeam = [
       github: "https://github.com/anoonimouse",
     },
   },
-  {
+   {
     id: 2,
-    name: "Divyansh Malik",
-    role: "Web Team",
-    image: "",
+    name: "Charitha Gattu ",
+    role: "UI/UX Developer",
+    image: "https://drive.google.com/file/d/1aWFv8_LhTpfSOsO5ChC14FFIo53DXOEW/view?usp=sharing",
     links: {
-      linkedin: "#",
-      instagram: "#",
-      github: "https://github.com/beepboop876",
+      linkedin: "https://www.instagram.com/i_am__charitha?igsh=eTVjeXc0MjRqczFw",
+      instagram: "https://www.linkedin.com/in/charitha-gattu?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      github: "https://github.com/harrypotteris?tab=repositories",
     },
-  },
-  {
+    
+  },{
     id: 3,
     name: "Anmol Mishra",
     role: "Web Team",
@@ -269,8 +280,31 @@ export const webTeam = [
       github: "https://github.com/anmolm-777",
     },
   },
+   {
+    id: 3,
+    name: "Shiv Jee Yadav",
+    role: "Coordinator",
+    image: "https://drive.google.com/file/d/1Hf436mTHJeXXIiTJh6zOluRFw50j15Pu/view?usp=sharing",
+    links: {
+      linkedin: "https://www.linkedin.com/in/shiv-yadav-ba3547284/",
+      // instagram: "#",
+      github: "https://github.com/ShivJee-Yadav/",
+    },
+  },
   {
-    id: 4,
+    id: 5,
+    name: "Divyansh Malik",
+    role: "Web Team",
+    image: "",
+    links: {
+      linkedin: "#",
+      instagram: "#",
+      github: "https://github.com/beepboop876",
+    },
+  },
+  
+  {
+    id: 2,
     name: "Anurag Samota",
     role: "Web Team",
     image: "https://drive.google.com/file/d/12k3XVxw4pkDV9GTA6Fm6-Iax5ChOZcJb/view?usp=sharing",

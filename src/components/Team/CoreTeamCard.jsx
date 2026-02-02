@@ -35,102 +35,146 @@ const CoreTeamCard = ({ member = {} }) => {
 
   return (
     <motion.div
-      ref={ref}
-      onMouseMove={handleMove}
-      onMouseLeave={reset}
-      style={{
-        x: reduced ? 0 : springX,
-        y: reduced ? 0 : springY,
-      }}
-      whileHover={
-        reduced
-          ? {}
-          : {
-            scale: 1.05,
-            boxShadow: "0 0 30px rgba(34,211,238,0.6)",
-          }
-      }
-      className="
-        relative rounded-2xl overflow-hidden
-        bg-gradient-to-b from-blue-600/20 to-cyan-400/10
-        backdrop-blur-lg
-        border border-cyan-400/30 w-64 sm:w-72
-      "
-    >
-      {/* IMAGE */}
-      <div className="relative h-40 overflow-hidden">
-        <img
-          src={getRenderableImageUrl(member.image) || placeholderImage}
-          alt={member.name}
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent" />
+  ref={ref}
+  onMouseMove={handleMove}
+  onMouseLeave={reset}
+  style={{
+    x: reduced ? 0 : springX,
+    y: reduced ? 0 : springY,
+  }}
+  whileHover={
+    reduced
+      ? {}
+      : {
+          scale: 1.05,
+          boxShadow: "0 0 30px rgba(34,211,238,0.6)",
+        }
+  }
+  className="
+    relative w-64 sm:w-72 h-[22rem]
+    rounded-2xl overflow-hidden
+    border border-cyan-400/30
+    group
+  "
+>
+  {/* Background image */}
+  <img
+    src={getRenderableImageUrl(member.image) || placeholderImage}
+    alt={member.name}
+    className="
+      absolute inset-0 w-full h-full object-cover
+      scale-105 group-hover:scale-110
+      transition-transform duration-700
+    "
+  />
 
-        {/* CORE BADGE */}
-        {/* <span className="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-semibold
-                         bg-cyan-500/20 text-cyan-300 border border-cyan-400/40 backdrop-blur">
-          Core Team
-        </span> */}
-      </div>
+  {/* Readability gradient */}
+  <div className="
+    absolute inset-0
+    bg-gradient-to-t
+    from-black/85 via-black/40 to-black/10
+  " />
 
-      {/* CONTENT */}
-      <div className="p-6 text-center">
-        <h3 className="text-xl font-semibold text-white mb-1">
-          {member.name}
-        </h3>
+  {/* Cyan glow overlay */}
+  <div className="
+    absolute inset-0
+    bg-gradient-to-br
+    from-cyan-400/10 via-transparent to-transparent
+  " />
 
-        {member.role && (
-          <p className="text-sm text-cyan-300 mb-5">
-            {member.role}
-          </p>
-        )}
+  {/* Optional badge */}
+  {member.core && (
+    <span className="
+      absolute top-3 left-3 z-10
+      px-3 py-1 rounded-full text-xs font-semibold
+      bg-cyan-500/20 text-cyan-300
+      border border-cyan-400/40 backdrop-blur
+    ">
+      Core Team
+    </span>
+  )}
 
-        {/* SOCIAL LINKS */}
-        <div className="flex justify-center gap-4">
-          {member.links?.linkedin && (
-            <a
-              href={member.links.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white/5 border border-white/10 text-gray-300
-                         hover:text-cyan-300 hover:border-cyan-400/40
-                         hover:shadow-lg hover:shadow-cyan-400/30
-                         transition-all"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
-          )}
+  {/* Content */}
+  <div className="
+    relative z-10 h-full
+    flex flex-col justify-end
+    p-6 text-center
+  ">
+    <h3 className="text-xl font-semibold text-white leading-tight">
+      {member.name}
+    </h3>
 
-          {member.links?.instagram && (
-            <a
-              href={member.links.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white/5 border border-white/10 text-gray-300
-                         hover:text-pink-400 hover:border-pink-400/40
-                         hover:shadow-lg hover:shadow-pink-500/20
-                         transition-all"
-            >
-              <Instagram className="w-5 h-5" />
-            </a>
-          )}
+    {member.role && (
+      <p className="text-sm text-cyan-300 mt-1 mb-4">
+        {member.role}
+      </p>
+    )}
 
-          {member.links?.github && (
-            <a
-              href={member.links.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white/5 border border-white/10 text-gray-300
-                         hover:text-white hover:border-white/40
-                         hover:shadow-lg hover:shadow-white/20
-                         transition-all"
-            >
-              <Github className="w-5 h-5" />
-            </a>
-          )}
-        </div>
-      </div>
-    </motion.div>
+    {/* SOCIAL LINKS */}
+    <div className="flex justify-center gap-4">
+      {member.links?.linkedin && (
+        <a
+          href={member.links.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            p-2 rounded-full
+            bg-black/40 backdrop-blur-md
+            border border-white/10
+            text-gray-200
+            hover:text-cyan-300
+            hover:border-cyan-400/40
+            hover:shadow-lg hover:shadow-cyan-400/30
+            transition-all
+          "
+        >
+          <Linkedin className="w-5 h-5" />
+        </a>
+      )}
+
+      {member.links?.instagram && (
+        <a
+          href={member.links.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            p-2 rounded-full
+            bg-black/40 backdrop-blur-md
+            border border-white/10
+            text-gray-200
+            hover:text-pink-400
+            hover:border-pink-400/40
+            hover:shadow-lg hover:shadow-pink-500/30
+            transition-all
+          "
+        >
+          <Instagram className="w-5 h-5" />
+        </a>
+      )}
+
+      {member.links?.github && (
+        <a
+          href={member.links.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            p-2 rounded-full
+            bg-black/40 backdrop-blur-md
+            border border-white/10
+            text-gray-200
+            hover:text-white
+            hover:border-white/40
+            hover:shadow-lg hover:shadow-white/20
+            transition-all
+          "
+        >
+          <Github className="w-5 h-5" />
+        </a>
+      )}
+    </div>
+  </div>
+</motion.div>
+
   );
 };
 

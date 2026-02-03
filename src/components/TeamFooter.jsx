@@ -1,4 +1,5 @@
 import { motion, useReducedMotion } from "framer-motion";
+import { label } from "framer-motion/client";
 import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -30,9 +31,9 @@ const TeamFooter = ({ links }) => {
         className="flex justify-center gap-8 mb-10"
       >
         {[
-          { icon: FaLinkedinIn, href: links.linkedin, label: "LinkedIn" },
-          { icon: FaInstagram, href: links.instagram, label: "Instagram" },
-          { icon: FaGithub, href: links.github, label: "GitHub" },
+          { icon: FaLinkedinIn, href: "https://www.linkedin.com/company/nexus-iit-jodhpur", label: "LinkedIn" },
+          { icon: FaInstagram, href:"https://www.instagram.com/nexus__iitj/", label: "Instagram" },
+          { icon: FaGithub, href: "https://github.com/NexusIITJ", label: "GitHub" },
         ].map(({ icon: Icon, href, label }, i) => (
           <motion.a
             key={label}

@@ -170,9 +170,9 @@ const Contact = () => {
               className="flex justify-center gap-8 mt-10"
             >
               {[
-                { icon: FaLinkedinIn, href: socialLinks.linkedin, label: "LinkedIn" },
-                { icon: FaInstagram, href: socialLinks.instagram, label: "Instagram" },
-                { icon: FaGithub, href: socialLinks.github, label: "GitHub" },
+                { icon: FaLinkedinIn, href: "https://www.linkedin.com/company/nexus-iit-jodhpur", label: "LinkedIn" },
+                { icon: FaInstagram, href:"https://www.instagram.com/nexus__iitj/", label: "Instagram" },
+                { icon: FaGithub, href: "https://github.com/NexusIITJ", label: "GitHub" },
               ].map(({ icon: Icon, href, label }, i) => (
                 <motion.a
                   key={label}

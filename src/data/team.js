@@ -326,3 +326,9 @@ export const Faculty = {
   image: "/textures/faculty.jpg",
   scholar: "https://scholar.google.com/citations?user=2Dut95kAAAAJ&hl=en"
 }
+
+export const socialLinks = {
+  linkedin: "",
+  instagram: "",
+  github: "",
+};

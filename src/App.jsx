@@ -15,6 +15,7 @@ const CalendarPage = lazy(() => import("./pages/CalendarPage"));
 const ISSTracker = lazy(() => import("./pages/ISSTracker"));
 const NASAEyes = lazy(() => import("./pages/NASAEyes"));
 const Projects = lazy(() => import("./pages/Projects"));
+const Contact = lazy(() => import("./pages/Contact"));
 
 function Layout() {
   const location = useLocation();
@@ -73,6 +74,7 @@ function Layout() {
           <Route path="/calendar" element={<CalendarPage />} />
           <Route path="/ISSTracker" element={<ISSTracker/>} />
           <Route path="/NASAEyes" element={<NASAEyes/>} />
+          <Route path="/Contact" element={<Contact/>} />
         </Routes>
       </Suspense>
     </>

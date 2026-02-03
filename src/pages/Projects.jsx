@@ -45,7 +45,7 @@ export default function Projects() {
     Math.abs(offset) * velocity;
 
   return (
-    <div className="min-h-screen pt-28 pb-20 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-28 pb-20 px-4 sm:px-6 lg:px-8 lg:mb-50">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div

@@ -61,7 +61,7 @@ export const projects = [
 }
 ,
   {
-    id: 5,
+    id: 6,
     title: "Hunting for Exoplanets Using AI",
     description: "In the NASA Space Apps Challenge, we tackled the problem of detecting exoplanets from Kepler Space Telescope light curves. We engineered features using Gaussian filtering for signal smoothing, FFT for frequency-domain analysis, and SMOTE for dataset balancing. A bidirectional LSTM network was implemented for time-series classification and compared against a support vector classifier. The deep-learning model significantly outperformed the baseline, demonstrating a scalable approach for future exoplanet discovery from large datasets.",
     image: "https://drive.google.com/file/d/19pQJ4NjlUqbiAR_lq4wG8HSuvpbrpq_7/view?usp=sharing",
@@ -75,7 +75,7 @@ export const projects = [
     }
   }
   // {
-  //   id: 6,
+  //   id: 7,
   //   title: "Solar Activity Monitoring",
   //   description: "Daily monitoring and documentation of sunspots, solar flares, and coronal mass ejections to study solar cycles.",
   //   image: "https://images.unsplash.com/photo-1532693322450-2cb5c511067d?w=800",

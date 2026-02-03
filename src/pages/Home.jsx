@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Calendar, Users, Image, Rocket, Telescope, ExternalLink } from 'lucide-react';
+import CountUp from '../components/CountUp'
+import ShinyText from '../components/ShinyText';
+import TeamFooter from '../components/TeamFooter';
+import { socialLinks } from '../data/team';
 
 export default function Home() {
   const features = [
@@ -52,7 +56,19 @@ export default function Home() {
               className="mb-8"
             >
               <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-6 tracking-tight">
-                <span className="text-white">NEXUS</span>
+                {/* <span className="text-white">NEXUS</span> */}
+                <ShinyText
+                  text="NEXUS"
+                  speed={2}
+                  delay={0}
+                  color="#b5b5b5"
+                  shineColor="#ffffff"
+                  spread={120}
+                  direction="left"
+                  yoyo={false}
+                  pauseOnHover={false}
+                  disabled={false}
+                />
               </h1>
               <div className="flex items-center justify-center gap-4 mb-4">
                 <div className="h-px bg-linear-to-r from-transparent via-blue-500 to-transparent w-24"></div>
@@ -73,7 +89,7 @@ export default function Home() {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="text-gray-300 text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto mb-12 leading-relaxed"
             >
-              Look up, learn more, launch ideas — your cosmic journey starts here.  
+              Look up, learn more, launch ideas — your cosmic journey starts here.
               Join a club that makes the universe feel within reach.
             </motion.p>
 
@@ -197,7 +213,16 @@ export default function Home() {
                 className="text-center"
               >
                 <div className="text-4xl sm:text-5xl font-bold text-blue-400 mb-2">
-                  {stat.number}
+                  {/* {stat.number} */}
+                  <CountUp
+                    from={0}
+                    to={stat.number}
+                    separator=","
+                    direction="up"
+                    duration={1}
+                    className="count-up-text"
+                    startCounting={false}
+                  />+
                 </div>
                 <div className="text-gray-400 text-sm sm:text-base uppercase tracking-wider">
                   {stat.label}
@@ -233,6 +258,7 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+      <TeamFooter links={socialLinks}/>
     </div>
   );
 }

@@ -25,7 +25,8 @@ export default function Navbar({ use3D, setUse3D }) {
             dropdown: [
                 { name: "Astronomy Calendar", path: "/calendar" },
                 { name: "Live ISS Tracker", path: "/ISSTracker" },
-                { name: "Live Solar System", path: "/NASAEyes" }
+                { name: "Live Solar System", path: "/NASAEyes" },
+                { name: "Contact Us", path: "/Contact" },
             ]
         }
     ];

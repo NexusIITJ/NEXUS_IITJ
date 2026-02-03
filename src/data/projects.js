@@ -64,16 +64,16 @@ export const projects = [
     id: 5,
     title: "Hunting for Exoplanets Using AI",
     description: "In the NASA Space Apps Challenge, we tackled the problem of detecting exoplanets from Kepler Space Telescope light curves. We engineered features using Gaussian filtering for signal smoothing, FFT for frequency-domain analysis, and SMOTE for dataset balancing. A bidirectional LSTM network was implemented for time-series classification and compared against a support vector classifier. The deep-learning model significantly outperformed the baseline, demonstrating a scalable approach for future exoplanet discovery from large datasets.",
-    image: "https://drive.google.com/file/d/1Y74GA6jBnrHVkD1P-pt-Fw4GPAt8cvGB/view?usp=sharing",
+    image: "https://drive.google.com/file/d/19pQJ4NjlUqbiAR_lq4wG8HSuvpbrpq_7/view?usp=sharing",
     category: "International Competition",
     status: "completed",
     team: ["Prushti Thumar","Prerna Chauhan","Adityaraj Bhure",],
-    date: "2023 - 2024",
+    date: "Sep 2025 - Dec 2026",
     technologies: ["Gaussian Filtering", "FFT", "SMOTE", "Bidirectional LSTM", "Support Vector Classifier"],
     links: {
       documentation: "#"
     }
-  },
+  }
   // {
   //   id: 6,
   //   title: "Solar Activity Monitoring",

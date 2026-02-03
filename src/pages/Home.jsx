@@ -29,13 +29,8 @@ export default function Home() {
   const quickLinks = [
     { name: "Events", path: "/events", icon: <Calendar className="w-5 h-5" /> },
     { name: "Gallery", path: "/gallery", icon: <Image className="w-5 h-5" /> },
-<<<<<<< HEAD
-    { name: "ISS Tracker", path: "/ISSTracker", icon: <Rocket className="w-5 h-5" /> },
-    // { name: "Team", path: "/team", icon: <Users className="w-5 h-5" /> }
-=======
     { name: "Calendar", path: "/calendar", icon: <Calendar className="w-5 h-5" /> },
     { name: "ISS Tracker", path: "/ISSTracker", icon: <Rocket className="w-5 h-5" /> }
->>>>>>> c64e276 (Bug fixes)
   ];
 
   return (

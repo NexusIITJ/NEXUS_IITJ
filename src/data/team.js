@@ -60,7 +60,7 @@ export const coreTeam = [
   {
     id: 1,
     name: "Surmit Kumar Choudhary",
-    role: "Core Member",
+    role: "Core Team",
     image: "https://drive.google.com/file/d/1aRUZOYWptAf3i66QWXKEbmDgVoJB4-ZX/view?usp=sharing",
     links: {
       linkedin: "https://www.linkedin.com/in/surmit-kumar-choudhary-iitj",
@@ -71,7 +71,7 @@ export const coreTeam = [
   {
     id: 2,
     name: "Arni Godiawala",
-    role: "Core Member",
+    role: "Core Team",
     image: "",
     links: {
       linkedin: "#",
@@ -82,7 +82,7 @@ export const coreTeam = [
   {
     id: 3,
     name: "Batav Tejas Santosh",
-    role: "Core Member",
+    role: "Core Team",
     image: "",
     links: {
       linkedin: "#",
@@ -93,7 +93,7 @@ export const coreTeam = [
   {
     id: 4,
     name: "Sri Raghava Chittanoor",
-    role: "Core Member",
+    role: "Core Team",
     image: "https://drive.google.com/file/d/1OlyCPa6aJl0v2_3OGsmwedJ70hmOm04Y/view?usp=sharing",
     links: {
       linkedin: "https://www.linkedin.com/in/chittanoor-sri-raghava-122321325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -104,7 +104,7 @@ export const coreTeam = [
   {
     id: 5,
     name: "Pratham Karmakar",
-    role: "Core Member",
+    role: "Core Team",
     image: "https://drive.google.com/file/d/1cNArXz1fWxdMFgHbXtAWIEA_tDGLaePe/view?usp=sharing",
     links: {
       linkedin: "https://www.linkedin.com/in/pratham-karmakar-8b2a16322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -115,7 +115,7 @@ export const coreTeam = [
   {
     id: 6,
     name: "Ramavath Bhuvana Chandra",
-    role: "Core Member",
+    role: "Core Team",
     image: "",
     links: {
       linkedin: "#",
@@ -126,7 +126,7 @@ export const coreTeam = [
   {
     id: 7,
     name: "Avani Bhadang",
-    role: "Core Member",
+    role: "Core Team",
     image: "https://drive.google.com/file/d/1-NK_s1RB-8PagRHicJI5JgH-0uu29pRC/view?usp=sharing",
     links: {
       linkedin: "https://www.linkedin.com/in/avani-bhadang-901bb81bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -137,7 +137,7 @@ export const coreTeam = [
   {
     id: 8,
     name: "Bhavyansh Sharma",
-    role: "Core Member",
+    role: "Core Team",
     image: "",
     links: {
       linkedin: "#",
@@ -148,7 +148,7 @@ export const coreTeam = [
   {
     id: 9,
     name: "Vishal Meena",
-    role: "Core Member",
+    role: "Core Team",
     image: "",
     links: {
       linkedin: "#",
@@ -159,7 +159,7 @@ export const coreTeam = [
   {
     id: 10,
     name: "G Praneesha",
-    role: "Core Member",
+    role: "Core Team",
     image: "",
     links: {
       linkedin: "#",
@@ -170,7 +170,7 @@ export const coreTeam = [
   {
     id: 11,
     name: "Rishabh Saini",
-    role: "Core Member",
+    role: "Core Team",
     image: "",
     links: {
       linkedin: "#",
@@ -181,7 +181,7 @@ export const coreTeam = [
   {
     id: 12,
     name: "Prerna Chauhan",
-    role: "Core Member",
+    role: "Core Team",
     image: "https://drive.google.com/file/d/1qbXUNY2BrqStbxPxeMX5gJhkMulFbgc6/view?usp=sharing",
     links: {
       linkedin: "http://linkedin.com/in/prerna-c-8a1875135",
@@ -192,7 +192,7 @@ export const coreTeam = [
   {
     id: 13,
     name: "Om Gupta",
-    role: "Core Member",
+    role: "Core Team",
     image: "https://drive.google.com/file/d/1tMT5Uv-9uaW_NynNi-7UO7RKTXYGGkkj/view?usp=sharing",
     links: {
       linkedin: "https://www.linkedin.com/in/om-gupta-82767131b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -203,7 +203,7 @@ export const coreTeam = [
   {
     id: 14,
     name: "Nimmagadda Princy",
-    role: "Core Member",
+    role: "Core Team",
     image: "https://drive.google.com/file/d/1VEqR_Jsra6WWJ9nNmELmNB2ou6ewCMgx/view?usp=sharing",
     links: {
       linkedin: "https://www.linkedin.com/in/nimmagadda-princy-877425328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
@@ -214,7 +214,7 @@ export const coreTeam = [
   {
     id: 15,
     name: "Bhure Adityaraj",
-    role: "Core Member",
+    role: "Core Team",
     image: "https://drive.google.com/file/d/1eRJ5l6wM-3Ih9hm10y7AJSVxQN8DY9Z9/view?usp=sharing",
     links: {
       linkedin: "https://www.linkedin.com/in/adityaraj-bhure-693195338/",
@@ -225,7 +225,7 @@ export const coreTeam = [
   {
     id: 16,
     name: "Iftikhar Alam",
-    role: "Core Member",
+    role: "Core Team",
     image: "https://drive.google.com/file/d/1n_Vr2HGty5M5hQ4up4Vl7zZ4zdm2Clpx/view?usp=sharing",
     links: {
       linkedin: "https://www.linkedin.com/in/iftikhar-alam-690191343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",

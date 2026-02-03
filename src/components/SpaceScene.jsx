@@ -5,8 +5,6 @@ import { planets } from "../data/planets";
 import StarsBackground from "./StarsBackground";
 import Sun from "./Sun";
 import stars from "/textures/stars.jpg";
-import stars2 from "/textures/stars2.jpg";
-import stars3 from "/textures/stars3.jpg";
 import sun from "/textures/sun.jpg";
 import { MathUtils } from "three";
 import * as THREE from "three";

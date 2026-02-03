@@ -29,8 +29,13 @@ export default function Home() {
   const quickLinks = [
     { name: "Events", path: "/events", icon: <Calendar className="w-5 h-5" /> },
     { name: "Gallery", path: "/gallery", icon: <Image className="w-5 h-5" /> },
+<<<<<<< HEAD
     { name: "ISS Tracker", path: "/ISSTracker", icon: <Rocket className="w-5 h-5" /> },
     // { name: "Team", path: "/team", icon: <Users className="w-5 h-5" /> }
+=======
+    { name: "Calendar", path: "/calendar", icon: <Calendar className="w-5 h-5" /> },
+    { name: "ISS Tracker", path: "/ISSTracker", icon: <Rocket className="w-5 h-5" /> }
+>>>>>>> c64e276 (Bug fixes)
   ];
 
   return (
@@ -85,11 +90,11 @@ export default function Home() {
               className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
             >
               <Link
-                to="/events"
+                to="/projects"
                 className="group relative px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/50 w-full sm:w-auto"
               >
                 <span className="flex items-center justify-center gap-2">
-                  Explore Events
+                  Explore Projects
                   <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>

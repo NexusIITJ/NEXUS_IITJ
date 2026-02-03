@@ -240,11 +240,22 @@ export const webTeam = [
     id: 0,
     name: "Luv Valecha",
     role: "Team Lead",
-    image: "",
+    image: "https://i.ibb.co/v44PHyqF/wallpaperflare-com-wallpaper-3.jpg",
     links: {
       linkedin: "https://www.linkedin.com/in/luvvalecha/",
       instagram: "https://www.instagram.com/luv_valecha/",
       github: "https://github.com/Luv-valecha",
+    },
+  },
+  {
+    id: 7,
+    name: "Shiv Jee Yadav",
+    role: "Coordinator",
+    image: "https://drive.google.com/file/d/1Hf436mTHJeXXIiTJh6zOluRFw50j15Pu/view?usp=sharing",
+    links: {
+      linkedin: "https://www.linkedin.com/in/shiv-yadav-ba3547284/",
+      // instagram: "#",
+      github: "https://github.com/ShivJee-Yadav/",
     },
   },
   {
@@ -259,17 +270,6 @@ export const webTeam = [
     },
   },
    {
-    id: 2,
-    name: "Charitha Gattu ",
-    role: "UI/UX Developer",
-    image: "https://drive.google.com/file/d/1aWFv8_LhTpfSOsO5ChC14FFIo53DXOEW/view?usp=sharing",
-    links: {
-      linkedin: "https://www.instagram.com/i_am__charitha?igsh=eTVjeXc0MjRqczFw",
-      instagram: "https://www.linkedin.com/in/charitha-gattu?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-      github: "https://github.com/harrypotteris?tab=repositories",
-    },
-    
-  },{
     id: 3,
     name: "Anmol Mishra",
     role: "Web Team",
@@ -303,17 +303,19 @@ export const webTeam = [
       instagram: "#",
       github: "https://github.com/anuragsamota",
     },
-  }, {
-    id: 7,
-    name: "Shiv Jee Yadav",
-    role: "Coordinator",
-    image: "https://drive.google.com/file/d/1Hf436mTHJeXXIiTJh6zOluRFw50j15Pu/view?usp=sharing",
+  }, 
+  {
+    id: 2,
+    name: "Charitha Gattu ",
+    role: "UI/UX Developer",
+    image: "https://drive.google.com/file/d/1aWFv8_LhTpfSOsO5ChC14FFIo53DXOEW/view?usp=sharing",
     links: {
-      linkedin: "https://www.linkedin.com/in/shiv-yadav-ba3547284/",
-      // instagram: "#",
-      github: "https://github.com/ShivJee-Yadav/",
+      linkedin: "https://www.linkedin.com/in/charitha-gattu?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      instagram: "https://www.instagram.com/i_am__charitha?igsh=eTVjeXc0MjRqczFw", 
+      github: "https://github.com/harrypotteris?tab=repositories",
     },
-  }
+    
+  },
 ];
 
 export const Faculty = {

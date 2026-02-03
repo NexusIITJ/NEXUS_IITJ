@@ -6,10 +6,10 @@ import EventCard from '../components/EventCard';
 export default function Events() {
     const [filter, setFilter] = useState('upcoming');
 
-    const filteredEvents = events.filter(event => {
-        if (filter === 'all') return true;
-        return event.status === filter;
-    });
+    // const filteredEvents = events.filter(event => {
+    //     if (filter === 'all') return true;
+    //     return event.status === filter;
+    // });
 
     return (
         <div className="min-h-screen pt-28 pb-20 px-4 md:px-8 flex flex-col items-center relative overflow-hidden">
@@ -29,7 +29,7 @@ export default function Events() {
             </motion.div>
 
 
-            <motion.div
+            {/* <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
@@ -61,13 +61,13 @@ export default function Events() {
                         {f}
                     </button>
                 ))}
-            </motion.div>
+            </motion.div> */}
 
 
-            <motion.div layout className="w-full max-w-5xl space-y-24 relative z-10">
-                <AnimatePresence mode="popLayout">
-                    {filteredEvents.length > 0 ? (
-                        filteredEvents.map((event, index) => (
+            <motion.div className="w-full max-w-5xl space-y-24 relative z-10">
+                <AnimatePresence>
+                    {events.length > 0 ? (
+                        events.map((event, index) => (
                             <EventCard key={event.id} event={event} index={index} />
                         ))
                     ) : (

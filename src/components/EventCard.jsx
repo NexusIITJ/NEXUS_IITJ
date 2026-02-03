@@ -6,10 +6,9 @@ export default function EventCard({ event, index }) {
 
     return (
         <motion.div
-            layout
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-100px", amount: 0.1 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
             className={`flex flex-col md:flex-row gap-8 md:gap-16 items-center ${isEven ? '' : 'md:flex-row-reverse'}`}
         >
@@ -25,7 +24,7 @@ export default function EventCard({ event, index }) {
                     />
 
 
-                    <div className="absolute top-4 left-4 z-20 flex gap-2">
+                    {/* <div className="absolute top-4 left-4 z-20 flex gap-2">
                         <span className={`
                             px-2 py-1 text-[10px] font-mono font-bold uppercase tracking-wider backdrop-blur-md rounded border
                             ${event.status === 'upcoming' ? 'bg-blue-500/20 text-blue-200 border-blue-500/30' :
@@ -34,7 +33,7 @@ export default function EventCard({ event, index }) {
                         `}>
                             Condition: {event.status}
                         </span>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

@@ -60,7 +60,7 @@ export default function Projects() {
               PROJECTS
             </span>
           </h1>
-          <p className="text-gray-400 text-lg max-w-3xl mx-auto">
+          <p className="text-white text-lg max-w-3xl mx-auto">
             Explore our diverse range of projects spanning astrophysics research,
             instrumentation, rocketry, and software development
           </p>
@@ -75,7 +75,7 @@ export default function Projects() {
         >
           {/* Category Filter */}
           <div>
-            <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
+            <h3 className="text-sm font-semibold text-amber-50 uppercase tracking-wider mb-3">
               Category
             </h3>
             <div className="flex flex-wrap gap-3">
@@ -85,7 +85,7 @@ export default function Projects() {
                   onClick={() => setSelectedCategory(category)}
                   className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${selectedCategory === category
                     ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/30'
-                    : 'bg-white/5 text-gray-300 hover:bg-white/10 border border-white/10'
+                    : 'bg-white/10 text-amber-50 hover:bg-white/15 border border-white/10'
                     }`}
                 >
                   {category}

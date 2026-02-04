@@ -41,7 +41,7 @@ export default function EventCard({ event, index }) {
             <div className={`w-full md:w-1/2 flex flex-col ${isEven ? 'md:items-start text-left' : 'md:items-end md:text-right'}`}>
                 <div className="flex items-center gap-3 mb-2 opacity-70">
                     <span className="w-2 h-2 rounded-full bg-[var(--accent-blue)] animate-pulse" />
-                    <span className="font-mono text-[var(--accent-blue)] text-sm tracking-widest">
+                    <span className="font-mono text-blue-100 text-sm tracking-widest">
                         {event.date}
                     </span>
                 </div>
@@ -50,11 +50,11 @@ export default function EventCard({ event, index }) {
                     {event.title}
                 </h2>
 
-                <p className="text-[var(--text-gray)] leading-relaxed mb-8 max-w-md">
+                <p className="text-amber-50 leading-relaxed mb-8 max-w-md">
                     {event.description}
                 </p>
 
-                <div className="flex flex-col gap-2 font-mono text-sm text-[var(--text-muted)]">
+                <div className="flex flex-col gap-2 font-mono text-sm text-blue-200">
                     <div className={`flex items-center gap-2 ${isEven ? 'justify-start' : 'md:justify-end'}`}>
                         <span className="text-[var(--accent-purple)]">LOC //</span>
                         <span>{event.location}</span>

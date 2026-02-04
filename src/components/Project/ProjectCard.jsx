@@ -12,8 +12,8 @@ const ProjectCard = ({ project, isActive, setActiveProject }) => {
             onClick={() => setActiveProject(project)}
             whileHover={{ x: 6 }}
             className={`w-full text-left text-xl rounded-xl overflow-hidden border transition-all ${isActive
-                ? "bg-blue-500/20 border-blue-500/40 shadow-lg shadow-blue-500/10"
-                : "bg-white/5 border-white/10 hover:bg-white/10"
+                ? "bg-blue-500/30 border-blue-500/40 shadow-lg shadow-blue-500/10"
+                : "bg-white/15 border-white/20 hover:bg-white/20"
                 }`}
         >
 
@@ -53,7 +53,7 @@ const ProjectCard = ({ project, isActive, setActiveProject }) => {
                         {project.title}
                     </h4>
 
-                    <p className="text-xs text-gray-400 leading-relaxed">
+                    <p className="text-xs text-amber-50 leading-relaxed">
                         {truncate(project.description)}
                     </p>
                 </div>

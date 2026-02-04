@@ -27,7 +27,7 @@ export default function DetailedProjectCard({ activeProject }) {
           {activeProject.title}
         </h2>
 
-        <p className="text-gray-400 mb-6">
+        <p className="text-amber-50 mb-6">
           {activeProject.description}
         </p>
 
@@ -73,7 +73,7 @@ export default function DetailedProjectCard({ activeProject }) {
           {activeProject.technologies.map((tech, idx) => (
             <span
               key={idx}
-              className="px-3 py-1 rounded text-xs bg-blue-500/10 text-blue-400 border border-blue-500/20"
+              className="px-3 py-1 rounded text-xs bg-blue-500/10 text-blue-200 border border-blue-500/30"
             >
               {tech}
             </span>

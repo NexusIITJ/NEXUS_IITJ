@@ -164,7 +164,7 @@ export default function Home() {
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
               What We Do
             </h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            <p className="text-white text-lg max-w-2xl mx-auto">
               Explore what NEXUS offers at your own pace — quiet stargazing, practical workshops, and chances to learn and grow.
             </p>
           </motion.div>

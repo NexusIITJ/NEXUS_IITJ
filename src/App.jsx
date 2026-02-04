@@ -38,7 +38,7 @@ function Layout() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url(/textures/stars3.jpg)",
+            backgroundImage: "url(/textures/stars3.png)",
           }}
         />
 

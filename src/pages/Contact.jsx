@@ -59,14 +59,18 @@ const handleSubmit = async (e) => {
   formData.append("submit", "Submit");   // 
 
   try {
-    await fetch(
-      "https://docs.google.com/forms/d/e/1FAIpQLSdz9NQ8N8kNsqG8KRLqhN09lnwJ4BKxUzpWoalRLt0Uyu_8wA/formResponse",
-      {
-        method: "POST",
-        body: formData,
-        mode: "no-cors",
-      }
-    );
+    await fetch("https://script.google.com/macros/s/AKfycbzVfeVd2XgMZA3DE_7_UmjMf-1Rk6zihAjnD3i0J-PF900dEula_qFTDTLzIcbe_hRm/exec", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value
+  })
+});
+
 
     setStatus("Message sent successfully!");
     form.reset();

@@ -39,49 +39,42 @@ const Contact = () => {
   const reduced = useReducedMotion();
   const [status, setStatus] = useState("");
 
+// Inside Contact component...
+
 const handleSubmit = async (e) => {
-  e.preventDefault();
-  setStatus("Sending...");
+    e.preventDefault();
+    setStatus("Sending...");
 
-  const form = e.target;
-  const formData = new FormData();
+    const form = e.target;
+    
+    // ⚠️ IMPORTANT: Ensure this is the URL from your NEW deployment (Version 2)
+    // If you haven't redeployed after fixing the code, do that first!
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbzVfeVd2XgMZA3DE_7_UmjMf-1Rk6zihAjnD3i0J-PF900dEula_qFTDTLzIcbe_hRm/exec";
 
-  // Your fields
-  formData.append("entry.790456632", form.name.value);
-  formData.append("entry.1916927500", form.email.value);
-  formData.append("entry.1429768268", form.message.value);
+    try {
+      await fetch(scriptUrl, {
+        method: "POST",
+        mode: "no-cors", // This sends the data without waiting for a 'success' confirmation
+        headers: {
+          "Content-Type": "text/plain",
+        },
+        body: JSON.stringify({
+          name: form.name.value,
+          email: form.email.value,
+          message: form.message.value
+        })
+      });
 
-  // Required Google internal fields
-  formData.append("fvv", "1");
-  formData.append("draftResponse", "[]");
-  formData.append("pageHistory", "0");
-  formData.append("fbzx", Date.now().toString());
-  formData.append("submit", "Submit");   // 
-// https://script.google.com/macros/s/AKfycbzVfeVd2XgMZA3DE_7_UmjMf-1Rk6zihAjnD3i0J-PF900dEula_qFTDTLzIcbe_hRm/exec
-  try {
-    await fetch("https://script.google.com/macros/s/AKfycbzVfeVd2XgMZA3DE_7_UmjMf-1Rk6zihAjnD3i0J-PF900dEula_qFTDTLzIcbe_hRm/exec", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify({
-    name: form.name.value,
-    email: form.email.value,
-    message: form.message.value
-  })
-});
-
-
-    setStatus("Message sent successfully!");
-    form.reset();
-  } catch (err) {
-    setStatus("Something went wrong.");
-  }
-};
-
-// https://docs.google.com/forms/d/e/1FAIpQLSdz9NQ8N8kNsqG8KRLqhN09lnwJ4BKxUzpWoalRLt0Uyu_8wA/viewform?usp=pp_url&entry.790456632=asdf&entry.1916927500=gmai.@gmal&entry.1429768268=Short
-
-
+      // In 'no-cors' mode, we cannot check response.ok. 
+      // If the fetch code above didn't crash, we assume it was sent successfully.
+      setStatus("Message sent successfully!");
+      form.reset();
+      
+    } catch (err) {
+      console.error("Error submitting form:", err);
+      setStatus("Something went wrong.");
+    }
+  };
   return (
     <motion.section
       variants={container}

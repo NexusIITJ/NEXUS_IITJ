@@ -46,7 +46,7 @@ function Layout() {
   {/* Rotating Golden Disc */}
   <div className="absolute inset-0 flex items-center justify-center">
     <img
-      src="/textures/stars3.jpg"
+      src="/textures/stars3.webp"
       alt="Voyager Golden Disc"
       className="w-[100vmin] h-[100vmin] animate-spin-slow"
     />

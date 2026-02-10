@@ -25,8 +25,8 @@ export const projects = [
     date: "July 2024 - Oct 2025",
     technologies: ["Mechanical & Structural Design","Avionics & Sensors","Communication Systems","Onboard Computing & Software" ,"Power Systems","Recovery" ,"Payload"],
     links: {
-      github: "#",
-      paper: "#"
+      // github: "#",
+      // paper: "#"
     }
   },
   {
@@ -40,8 +40,8 @@ export const projects = [
     date: "July 2023 - Oct 2024",
     technologies: ["Mechanical & Structural Design","Avionics & Sensors","Communication Systems","Onboard Computing & Software" ,"Power Systems","Recovery" ,"Payload"],
     links: {
-      github: "#",
-      paper: "#"
+      // github: "#",
+      // paper: "#"
     }
   },
   {
@@ -55,8 +55,8 @@ export const projects = [
   date: "July 2024 - Mar 2025",
   technologies: [ "Aerodynamics & Aviation Systems", "Propulsion Technologies", "Avionics & Control Systems", "Structural & Materials Engineering", "Recovery Mechanisms", "Systems Integration" ],
   links: {
-      github: "#",
-      paper: "#"
+      // github: "#",
+      // paper: "#"
   }
 }
 ,
@@ -71,7 +71,7 @@ export const projects = [
     date: "Sep 2025 - Dec 2026",
     technologies: ["Gaussian Filtering", "FFT", "SMOTE", "Bidirectional LSTM", "Support Vector Classifier"],
     links: {
-      documentation: "#"
+      // documentation: "#"
     }
   },
   {

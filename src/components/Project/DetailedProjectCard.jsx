@@ -94,6 +94,12 @@ export default function DetailedProjectCard({ activeProject }) {
               Live Demo
             </a>
           )}
+          {activeProject.links.documentation && (
+            <a href={activeProject.links.documentation} className="flex items-center gap-2 text-gray-400 hover:text-white">
+              <ExternalLink className="w-4 h-4" />
+              Documentation
+            </a>
+          )}
         </div>
       </div>
  <motion.div

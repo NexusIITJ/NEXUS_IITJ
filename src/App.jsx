@@ -44,26 +44,30 @@ function Layout() {
   }, []);
 
   // Optimized Star Layers (Calculated once)
-  const smallStars = useMemo(() => generateSpace(2000), []);
-  const mediumStars = useMemo(() => generateSpace(200), []);
-  const largeStars = useMemo(() => generateSpace(50), []);
+  const smallStars = useMemo(() => generateSpace(1200), []);
+  const mediumStars = useMemo(() => generateSpace(100), []);
+  const largeStars = useMemo(() => generateSpace(25), []);
 
   return (
     <>
       <div className="fixed inset-0 -z-10 bg-black overflow-hidden">
         
         {/* --- 1. OPTIMIZED STAR BACKGROUND (Twinkling) --- */}
+        {/* --- 1. OPTIMIZED TWINKLING STARS --- */}
         <div className="absolute inset-0">
             <div 
-              className="absolute w-[1px] h-[1px] bg-transparent animate-pulse"
+              // Add rounded-full here:
+              className="absolute w-[1px] h-[1px] rounded-full bg-transparent animate-pulse"
               style={{ boxShadow: smallStars, animationDuration: '4s' }} 
             />
             <div 
-              className="absolute w-[2px] h-[2px] bg-transparent animate-pulse"
+              // Add rounded-full here:
+              className="absolute w-[2px] h-[2px] rounded-full bg-transparent animate-pulse"
               style={{ boxShadow: mediumStars, animationDuration: '3s', opacity: 0.8 }} 
             />
             <div 
-              className="absolute w-[3px] h-[3px] bg-transparent animate-pulse"
+              // Add rounded-full here:
+              className="absolute w-[3px] h-[3px] rounded-full bg-transparent animate-pulse"
               style={{ boxShadow: largeStars, animationDuration: '1.5s', opacity: 0.6 }} 
             />
         </div>

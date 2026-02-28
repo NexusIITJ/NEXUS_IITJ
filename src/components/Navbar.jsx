@@ -49,7 +49,7 @@ export default function Navbar({ use3D, setUse3D }) {
   className="shrink-0 font-bold text-3xl tracking-wider"
 >
   <ShinyText
-    text="NEXUS"
+    text="ℕE✘US"
     speed={4}
     delay={0}
     color="#DAF160"

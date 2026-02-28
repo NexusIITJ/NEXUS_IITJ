@@ -1,8 +1,9 @@
 import { motion, useReducedMotion } from "framer-motion";
-import { FaEnvelope, FaPaperPlane } from "react-icons/fa";
+import { FaEnvelope, FaPaperPlane, FaCheck } from "react-icons/fa";
 import { socialLinks } from "../data/team";
 import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
 import { useState } from "react";
+
 const container = {
   hidden: { opacity: 0 },
   visible: (reduced) => ({
@@ -38,43 +39,47 @@ const iconVariants = {
 const Contact = () => {
   const reduced = useReducedMotion();
   const [status, setStatus] = useState("");
+  const [isSent, setIsSent] = useState(false); // <-- new state
 
-// Inside Contact component...
-
-const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
 
     const form = e.target;
-    
-    // ⚠️ IMPORTANT: Ensure this is the URL from your NEW deployment (Version 2)
-    // If you haven't redeployed after fixing the code, do that first!
-    const scriptUrl = "https://script.google.com/macros/s/AKfycbzVfeVd2XgMZA3DE_7_UmjMf-1Rk6zihAjnD3i0J-PF900dEula_qFTDTLzIcbe_hRm/exec";
+
+    const scriptUrl =
+      "https://script.google.com/macros/s/AKfycbzVfeVd2XgMZA3DE_7_UmjMf-1Rk6zihAjnD3i0J-PF900dEula_qFTDTLzIcbe_hRm/exec";
 
     try {
       await fetch(scriptUrl, {
         method: "POST",
-        mode: "no-cors", // This sends the data without waiting for a 'success' confirmation
+        mode: "no-cors",
         headers: {
           "Content-Type": "text/plain",
         },
         body: JSON.stringify({
           name: form.name.value,
           email: form.email.value,
-          message: form.message.value
-        })
+          message: form.message.value,
+        }),
       });
 
-      // In 'no-cors' mode, we cannot check response.ok. 
-      // If the fetch code above didn't crash, we assume it was sent successfully.
+      // mark as sent and show tick animation
       setStatus("Message sent successfully!");
+      setIsSent(true);
       form.reset();
-      
+
+      // optional: revert button after 3s so user can send again
+      setTimeout(() => {
+        setIsSent(false);
+        setStatus("");
+      }, 3000);
     } catch (err) {
       console.error("Error submitting form:", err);
       setStatus("Something went wrong.");
     }
   };
+
   return (
     <motion.section
       variants={container}
@@ -92,13 +97,15 @@ const handleSubmit = async (e) => {
         Contact Us
       </motion.h1>
 
-      <div className="mx-auto mb-14 h-px w-32 bg-gradient-to-r from-transparent via-blue-400 to-transparent
-                      shadow-[0_0_16px_rgba(59,130,246,0.9)]" />
+      <div
+        className="mx-auto mb-14 h-px w-32 bg-gradient-to-r from-transparent via-blue-400 to-transparent
+                      shadow-[0_0_16px_rgba(59,130,246,0.9)]"
+      />
 
       <motion.p
         variants={item}
         custom={reduced}
-        className="text-center text-white/70 max-w-xl mx-auto mb-16"
+        className="text-center text-white text-lg max-w-xl mx-auto mb-16"
       >
         Have a question, collaboration idea, or just want to say hi?
         Drop us a message and we'll get back to you 🚀
@@ -116,13 +123,10 @@ const handleSubmit = async (e) => {
           shadow-[0_0_40px_rgba(59,130,246,0.25)]
           space-y-6
         "
-        
       >
         {/* Name */}
         <div>
-          <label className="block mb-2 text-sm text-white/60">
-            Your Name
-          </label>
+          <label className="block mb-2 text-sm text-white">Your Name</label>
           <input
             name="name"
             type="text"
@@ -141,9 +145,7 @@ const handleSubmit = async (e) => {
 
         {/* Email */}
         <div>
-          <label className="block mb-2 text-sm text-white/60">
-            Email Address
-          </label>
+          <label className="block mb-2 text-sm text-white">Email Address</label>
           <input
             name="email"
             type="email"
@@ -162,9 +164,7 @@ const handleSubmit = async (e) => {
 
         {/* Message */}
         <div>
-          <label className="block mb-2 text-sm text-white/60">
-            Message
-          </label>
+          <label className="block mb-2 text-sm text-white">Message</label>
           <textarea
             name="message"
             rows="5"
@@ -184,6 +184,7 @@ const handleSubmit = async (e) => {
         {/* Submit */}
         <button
           type="submit"
+          disabled={isSent || status === "Sending..."}
           className="
             group w-full flex items-center justify-center gap-3
             px-6 py-3 rounded-full font-semibold
@@ -193,44 +194,53 @@ const handleSubmit = async (e) => {
             hover:shadow-[0_0_40px_rgba(99,102,241,0.9)]
             hover:scale-[1.02]
             transition-all duration-300
+            disabled:opacity-70 disabled:cursor-not-allowed
           "
         >
-          <FaPaperPlane className="group-hover:translate-x-1 transition" />
-          Send Message
+          {/* show plane icon when not sent */}
+          {!isSent && <FaPaperPlane className="group-hover:translate-x-1 transition" />}
+
+          {/* when sent, replace text with animated tick */}
+          {isSent ? (
+            <FaCheck className="text-white" />
+          ) : (
+            "Send Message"
+          )}
         </button>
       </motion.form>
+
       <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              className="flex justify-center gap-8 mt-10"
-            >
-              {[
-                { icon: FaLinkedinIn, href: "https://www.linkedin.com/company/nexus-iit-jodhpur", label: "LinkedIn" },
-                { icon: FaInstagram, href:"https://www.instagram.com/nexus__iitj/", label: "Instagram" },
-                { icon: FaGithub, href: "https://github.com/NexusIITJ", label: "GitHub" },
-              ].map(({ icon: Icon, href, label }, i) => (
-                <motion.a
-                  key={label}
-                  variants={iconVariants}
-                  custom={reduced}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  className="
-                    p-4 rounded-full border border-white/15
-                    text-white/80 hover:text-blue-400
-                    hover:border-blue-400/60
-                    shadow-[0_0_0px_rgba(59,130,246,0)]
-                    hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]
-                    transition-all duration-300
-                  "
-                >
-                  <Icon size={22} />
-                </motion.a>
-              ))}
-            </motion.div>
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="flex justify-center gap-8 mt-10"
+      >
+        {[
+          { icon: FaLinkedinIn, href: "https://www.linkedin.com/company/nexus-iit-jodhpur", label: "LinkedIn" },
+          { icon: FaInstagram, href:"https://www.instagram.com/nexus__iitj/", label: "Instagram" },
+          { icon: FaGithub, href: "https://github.com/NexusIITJ", label: "GitHub" },
+        ].map(({ icon: Icon, href, label }, i) => (
+          <motion.a
+            key={label}
+            variants={iconVariants}
+            custom={reduced}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+            className="
+              p-4 rounded-full border border-white/15
+              text-white/80 hover:text-blue-400
+              hover:border-blue-400/60
+              shadow-[0_0_0px_rgba(59,130,246,0)]
+              hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]
+              transition-all duration-300
+            "
+          >
+            <Icon size={22} />
+          </motion.a>
+        ))}
+      </motion.div>
     </motion.section>
   );
 };

@@ -76,9 +76,9 @@ function Layout() {
           <img
             src="/textures/stars3.webp"
             alt="Voyager Golden Disc"
-            className="w-[100vmin] h-[100vmin] animate-spin-slow"
+            className="w-[100vmin] h-[100vmin] animate-spin-slow opacity-60"
           />
-          <div className="absolute inset-0 bg-black/40"></div>
+          {/* <div className="absolute inset-0 bg-black/40"></div> */}
         </div>
 
        

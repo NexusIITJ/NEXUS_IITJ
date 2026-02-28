@@ -68,28 +68,28 @@ export const coreTeam = [
       github: "https://github.com/surmituwu",
     },
   },
-  {
-    id: 2,
-    name: "Arni Godiawala",
-    role: "Core Team",
-    image: "",
-    links: {
-      linkedin: "#",
-      instagram: "#",
-      github: "#",
-    },
-  },
-  {
-    id: 3,
-    name: "Batav Tejas Santosh",
-    role: "Core Team",
-    image: "",
-    links: {
-      linkedin: "#",
-      instagram: "#",
-      github: "#",
-    },
-  },
+  // {
+  //   id: 2,
+  //   name: "Arni Godiawala",
+  //   role: "Core Team",
+  //   image: "",
+  //   links: {
+  //     linkedin: "#",
+  //     instagram: "#",
+  //     github: "#",
+  //   },
+  // },
+  // {
+  //   id: 3,
+  //   name: "Batav Tejas Santosh",
+  //   role: "Core Team",
+  //   image: "",
+  //   links: {
+  //     linkedin: "#",
+  //     instagram: "#",
+  //     github: "#",
+  //   },
+  // },
   {
     id: 4,
     name: "Sri Raghava Chittanoor",
@@ -112,17 +112,17 @@ export const coreTeam = [
       github: "https://github.com/PrathamKarmakar",
     },
   },
-  {
-    id: 6,
-    name: "Ramavath Bhuvana Chandra",
-    role: "Core Team",
-    image: "",
-    links: {
-      linkedin: "#",
-      instagram: "#",
-      github: "#",
-    },
-  },
+  // {
+  //   id: 6,
+  //   name: "Ramavath Bhuvana Chandra",
+  //   role: "Core Team",
+  //   image: "",
+  //   links: {
+  //     linkedin: "#",
+  //     instagram: "#",
+  //     github: "#",
+  //   },
+  // },
   {
     id: 7,
     name: "Avani Bhadang",
@@ -134,50 +134,50 @@ export const coreTeam = [
       github: "https://share.google/SC7H6PUoJoWdgyxxI",
     },
   },
-  {
-    id: 8,
-    name: "Bhavyansh Sharma",
-    role: "Core Team",
-    image: "",
-    links: {
-      linkedin: "#",
-      instagram: "#",
-      github: "#",
-    },
-  },
-  {
-    id: 9,
-    name: "Vishal Meena",
-    role: "Core Team",
-    image: "",
-    links: {
-      linkedin: "#",
-      instagram: "#",
-      github: "#",
-    },
-  },
-  {
-    id: 10,
-    name: "G Praneesha",
-    role: "Core Team",
-    image: "",
-    links: {
-      linkedin: "#",
-      instagram: "#",
-      github: "#",
-    },
-  },
-  {
-    id: 11,
-    name: "Rishabh Saini",
-    role: "Core Team",
-    image: "",
-    links: {
-      linkedin: "#",
-      instagram: "#",
-      github: "#",
-    },
-  },
+  // {
+  //   id: 8,
+  //   name: "Bhavyansh Sharma",
+  //   role: "Core Team",
+  //   image: "",
+  //   links: {
+  //     linkedin: "#",
+  //     instagram: "#",
+  //     github: "#",
+  //   },
+  // },
+  // {
+  //   id: 9,
+  //   name: "Vishal Meena",
+  //   role: "Core Team",
+  //   image: "",
+  //   links: {
+  //     linkedin: "#",
+  //     instagram: "#",
+  //     github: "#",
+  //   },
+  // },
+  // {
+  //   id: 10,
+  //   name: "G Praneesha",
+  //   role: "Core Team",
+  //   image: "",
+  //   links: {
+  //     linkedin: "#",
+  //     instagram: "#",
+  //     github: "#",
+  //   },
+  // },
+  // {
+  //   id: 11,
+  //   name: "Rishabh Saini",
+  //   role: "Core Team",
+  //   image: "",
+  //   links: {
+  //     linkedin: "#",
+  //     instagram: "#",
+  //     github: "#",
+  //   },
+  // },
   {
     id: 12,
     name: "Prerna Chauhan",
@@ -240,7 +240,7 @@ export const webTeam = [
     id: 0,
     name: "Luv Valecha",
     role: "Team Lead",
-    image: "https://i.ibb.co/v44PHyqF/wallpaperflare-com-wallpaper-3.jpg",
+    image: "https://drive.google.com/file/d/1AIEbI8_Hs44mIgRekTglIkgYlB5XayFA/view?usp=sharing",
     links: {
       linkedin: "https://www.linkedin.com/in/luvvalecha/",
       instagram: "https://www.instagram.com/luv_valecha/",
@@ -259,13 +259,24 @@ export const webTeam = [
     },
   },
   {
+    id: 6,
+    name: "Anurag Samota",
+    role: "Web Team",
+    image: "https://drive.google.com/file/d/12k3XVxw4pkDV9GTA6Fm6-Iax5ChOZcJb/view?usp=sharing",
+    links: {
+      linkedin: "https://www.linkedin.com/in/anurag-samota",
+      instagram: "#",
+      github: "https://github.com/anuragsamota",
+    },
+  },
+  {
     id: 4,
     name: "Udit Chand Narayan",
     role: "Web Team",
-    image: "",
+    image: "https://drive.google.com/file/d/1tHE6ihyJRgeAqNQ25YSk51I1l0BNfoZ6/view?usp=sharing",
     links: {
-      linkedin: "#",
-      instagram: "#",
+      linkedin: "https://www.linkedin.com/in/uditnc",
+      instagram: "https://www.instagram.com/uditnc",
       github: "https://github.com/anoonimouse",
     },
   },
@@ -273,7 +284,7 @@ export const webTeam = [
     id: 3,
     name: "Anmol Mishra",
     role: "Web Team",
-    image: "",
+    image: "https://drive.google.com/file/d/1LIj9iiM_acmgvAPs8nzbgIH26KlgFb1b/view?usp=sharing",
     links: {
       linkedin: "https://www.instagram.com/iam_a.m7/",
       instagram: "https://www.linkedin.com/in/anmol-mishra-144bab328/",
@@ -285,23 +296,11 @@ export const webTeam = [
     id: 5,
     name: "Divyansh Malik",
     role: "Web Team",
-    image: "",
+    image: "https://drive.google.com/file/d/1ZrSB3WyKQXVAPw94kkevMXeILIigJz-d/view?usp=sharing",
     links: {
-      linkedin: "#",
-      instagram: "#",
+      // linkedin: "#",
+      // instagram: "#",
       github: "https://github.com/beepboop876",
-    },
-  },
-  
-  {
-    id: 6,
-    name: "Anurag Samota",
-    role: "Web Team",
-    image: "https://drive.google.com/file/d/12k3XVxw4pkDV9GTA6Fm6-Iax5ChOZcJb/view?usp=sharing",
-    links: {
-      linkedin: "https://www.linkedin.com/in/anurag-samota",
-      instagram: "#",
-      github: "https://github.com/anuragsamota",
     },
   }, 
   {

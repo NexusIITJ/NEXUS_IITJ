@@ -72,12 +72,12 @@ export default function Home() {
               </h1>
               <div className="flex items-center justify-center gap-4 mb-4">
                 <div className="h-px bg-linear-to-r from-transparent via-blue-500 to-transparent w-24"></div>
-                <p className="text-blue-600 text-xl sm:text-2xl md:text-3xl font-light tracking-wider">
+                <p className="text-blue-400 font-semibold text-xl sm:text-2xl md:text-4xl tracking-wider">
                   Astronomy and Space-Tech Club
                 </p>
                 <div className="h-px bg-linear-to-r from-transparent via-blue-500 to-transparent w-24"></div>
               </div>
-              <p className="text-white text-sm sm:text-base tracking-widest uppercase">
+              <p className="text-white text-sm sm:text-xl tracking-widest uppercase">
                 Indian Institute of Technology Jodhpur
               </p>
             </motion.div>
@@ -87,7 +87,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.8 }}
-              className="text-gray-300 text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto mb-12 leading-relaxed"
+              className="text-gray-100 text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto mb-12 leading-relaxed"
             >
               Look up, learn more, launch ideas — your cosmic journey starts here.
               Join a club that makes the universe feel within reach.
@@ -133,7 +133,7 @@ export default function Home() {
                  backdrop-blur-md
                  border border-white/15
                  rounded-full
-                 text-gray-300
+                text-gray-100
                  shadow-lg shadow-black/50
                  transition-all duration-300
                  hover:bg-black/80
@@ -202,7 +202,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold text-white mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-blue-200 text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </motion.div>
@@ -241,7 +241,7 @@ export default function Home() {
                     startCounting={false}
                   />+
                 </div>
-                <div className="text-gray-400 text-sm sm:text-base uppercase tracking-wider">
+                <div className="text-gray-400 text-sm sm:text-base uppercase tracking-wider font-serif">
                   {stat.label}
                 </div>
               </motion.div>
@@ -263,7 +263,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Ready to Explore?
             </h2>
-            <p className="text-gray-300 text-lg mb-8">
+            <p className="text-white text-lg mb-8 font-normal">
               Join NEXUS and be part of a community that shares your passion for the cosmos
             </p>
             <Link

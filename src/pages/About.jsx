@@ -49,7 +49,7 @@ const About = () => {
       <motion.p
         variants={item}
         custom={reduced}
-        className="text-gray-300 text-lg leading-relaxed text-center mb-12"
+        className="text-gray-100 text-lg leading-relaxed text-center mb-12"
       >
         {aboutData.description}
       </motion.p>

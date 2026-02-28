@@ -99,8 +99,8 @@ function Layout() {
 
       <Suspense
         fallback={
-          <div className="flex items-center justify-center h-screen text-white">
-            Loading…
+          <div className="flex items-center justify-center h-screen text-teal-700 text-2xl">
+            From Earth to eternity: Voyager’s Golden Record…
           </div>
         }
       >

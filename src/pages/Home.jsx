@@ -55,14 +55,14 @@ export default function Home() {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="mb-8"
             >
-              <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-6 tracking-tight">
-                {/* <span className="text-white">NEXUS</span> */}
+              <h1 className="text-8xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-6 tracking-tight">
+                {/* <span className="text-white"></span> */}
                 <ShinyText
                   text="NEXUS"
-                  speed={2}
+                  speed={4}
                   delay={0}
-                  color="#b5b5b5"
-                  shineColor="#ffffff"
+                  color="#DAF160"
+                  shineColor="#000000"
                   spread={120}
                   direction="left"
                   yoyo={false}
@@ -72,7 +72,7 @@ export default function Home() {
               </h1>
               <div className="flex items-center justify-center gap-4 mb-4">
                 <div className="h-px bg-linear-to-r from-transparent via-blue-500 to-transparent w-24"></div>
-                <p className="text-blue-400 text-xl sm:text-2xl md:text-3xl font-light tracking-wider">
+                <p className="text-blue-600 text-xl sm:text-2xl md:text-3xl font-light tracking-wider">
                   Astronomy and Space-Tech Club
                 </p>
                 <div className="h-px bg-linear-to-r from-transparent via-blue-500 to-transparent w-24"></div>
@@ -202,7 +202,7 @@ export default function Home() {
               { number: "50+", label: "Members" },
               { number: "10+", label: "Events" },
               { number: "10+", label: "Projects" },
-              { number: "10+", label: "Years Active" }
+              { number: "12+", label: "Years Active" }
             ].map((stat, index) => (
               <motion.div
                 key={index}

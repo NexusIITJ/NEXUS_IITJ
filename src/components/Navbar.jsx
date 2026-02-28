@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
+// import { Link } from "react-router-dom";
+import ShinyText from '../components/ShinyText';
 
 export default function Navbar({ use3D, setUse3D }) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -42,9 +44,24 @@ export default function Navbar({ use3D, setUse3D }) {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="flex items-center justify-between h-16">
                         {/* Logo */}
-                        <Link to="/" className="shrink-0 font-bold text-3xl text-white tracking-wider">
-                            NEXUS
-                        </Link>
+                       <Link 
+  to="/" 
+  className="shrink-0 font-bold text-3xl tracking-wider"
+>
+  <ShinyText
+    text="NEXUS"
+    speed={4}
+    delay={0}
+    color="#DAF160"
+    shineColor="#000000"
+    spread={120}
+    direction="left"
+    yoyo={false}
+    pauseOnHover={false}
+    disabled={false}
+  />
+</Link>
+
 
                         {/* Desktop Menu */}
                         <div className="hidden md:block">

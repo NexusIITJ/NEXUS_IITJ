@@ -69,6 +69,8 @@ const TeamCard = ({ member = {} }) => {
   <img
     src={getRenderableImageUrl(image) || placeholderImage}
     alt={name}
+    loading="lazy"
+    decoding="async"
     className="
       absolute inset-0 w-full h-full object-cover
       scale-105 group-hover:scale-110

@@ -1,57 +1,46 @@
 export const coordinators = [
   {
-    id: 1,
-    name: "",
-    role: "Coordinator",
-    image: "",
-    links: {
-      linkedin: "#",
-      instagram: "#",
-      github: "#",
+      id: 1,
+      name: "Prerna Chauhan",
+      role: "Digital & Social Media Handling",
+      image: "https://drive.google.com/file/d/1qbXUNY2BrqStbxPxeMX5gJhkMulFbgc6/view?usp=sharing",
+      links: {
+        linkedin: "http://linkedin.com/in/prerna-c-8a1875135",
+        instagram: "https://www.instagram.com/prerna_r_/",
+        github: "https://github.com/settings/profile",
+      },
     },
-  },
-  {
-    id: 2,
-    name: "",
-    role: "Coordinator",
-    image: "",
-    links: {
-      linkedin: "#",
-      instagram: "#",
-      github: "#",
+    {
+      id:2,
+      name: "Sri Raghava Chittanoor",
+      role: "Event Coordination & Execution",
+      image: "https://drive.google.com/file/d/1OlyCPa6aJl0v2_3OGsmwedJ70hmOm04Y/view?usp=sharing",
+      links: {
+        linkedin: "https://www.linkedin.com/in/chittanoor-sri-raghava-122321325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        instagram: "https://www.instagram.com/raghu_raghava_10/",
+        github: "https://github.com/raghava329",
+      },
     },
-  },
+  
   {
     id: 3,
-    name: "#",
-    role: "Coordinator",
-    image: "",
+    name: "Bhure Adityaraj",
+    role: "Project Leadership & Oversight",
+    image: "https://drive.google.com/file/d/1eRJ5l6wM-3Ih9hm10y7AJSVxQN8DY9Z9/view?usp=sharing",
     links: {
-      linkedin: "#",
-      instagram: "#",
+      linkedin: "https://www.linkedin.com/in/adityaraj-bhure-693195338/",
+      instagram: "https://www.instagram.com/aditya_bhure01/",
       github: "#",
     },
-  },
-  {
+  },{
     id: 4,
-    name: "",
-    role: "Coordinator",
-    image: "",
+    name: "Iftikhar Alam",
+    role: "Office Work & Budget Handling",
+    image: "https://drive.google.com/file/d/1n_Vr2HGty5M5hQ4up4Vl7zZ4zdm2Clpx/view?usp=sharing",
     links: {
-      linkedin: "#",
-      instagram: "#",
-      github: "#",
-    },
-  },
-  {
-    id: 5,
-    name: "",
-    role: "Coordinator",
-    image: "",
-    links: {
-      linkedin: "#",
-      instagram: "#",
-      github: "#",
+      linkedin: "https://www.linkedin.com/in/iftikhar-alam-690191343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      instagram: "https://www.instagram.com/iftikhar2006/",
+      github: "https://github.com/Iftikhar2006",
     },
   },
 ];
@@ -60,7 +49,7 @@ export const coreTeam = [
   {
     id: 1,
     name: "",
-    role: "Coordinator",
+    role: "will be update soon",
     image: "",
     links: {
       linkedin: "#",
@@ -71,7 +60,7 @@ export const coreTeam = [
   {
     id: 2,
     name: "",
-    role: "Coordinator",
+    role: "will be update soon",
     image: "",
     links: {
       linkedin: "#",
@@ -82,128 +71,13 @@ export const coreTeam = [
   {
     id: 3,
     name: "#",
-    role: "Coordinator",
+    role: "will be update soon",
     image: "",
     links: {
       linkedin: "#",
       instagram: "#",
       github: "#",
     },
-  },
-  {
-    id: 4,
-    name: "",
-    role: "Coordinator",
-    image: "",
-    links: {
-      linkedin: "#",
-      instagram: "#",
-      github: "#",
-    },
-  },
-  {
-    id: 5,
-    name: "",
-    role: "Coordinator",
-    image: "",
-    links: {
-      linkedin: "#",
-      instagram: "#",
-      github: "#",
-    },
-  },
-  {
-    id: 6,
-    name: "",
-    role: "Coordinator",
-    image: "",
-    links: {
-      linkedin: "#",
-      instagram: "#",
-      github: "#",
-    },
-  },
-];
-
-export const webTeam = [
-   {
-    id: 0,
-    name: "Luv Valecha",
-    role: "Team Lead",
-    image: "https://drive.google.com/file/d/1AIEbI8_Hs44mIgRekTglIkgYlB5XayFA/view?usp=sharing",
-    links: {
-      linkedin: "https://www.linkedin.com/in/luvvalecha/",
-      instagram: "https://www.instagram.com/luv_valecha/",
-      github: "https://github.com/Luv-valecha",
-    },
-  },
-  {
-    id: 7,
-    name: "Shiv Jee Yadav",
-    role: "Coordinator",
-    image: "https://drive.google.com/file/d/1Hf436mTHJeXXIiTJh6zOluRFw50j15Pu/view?usp=sharing",
-    links: {
-      linkedin: "https://www.linkedin.com/in/shiv-yadav-ba3547284/",
-      // instagram: "#",
-      github: "https://github.com/ShivJee-Yadav/",
-    },
-  },
-  {
-    id: 6,
-    name: "Anurag Samota",
-    role: "Web Team",
-    image: "https://drive.google.com/file/d/12k3XVxw4pkDV9GTA6Fm6-Iax5ChOZcJb/view?usp=sharing",
-    links: {
-      linkedin: "https://www.linkedin.com/in/anurag-samota",
-      instagram: "#",
-      github: "https://github.com/anuragsamota",
-    },
-  },
-  {
-    id: 4,
-    name: "Udit Chand Narayan",
-    role: "Web Team",
-    image: "https://drive.google.com/file/d/1tHE6ihyJRgeAqNQ25YSk51I1l0BNfoZ6/view?usp=sharing",
-    links: {
-      linkedin: "https://www.linkedin.com/in/uditnc",
-      instagram: "https://www.instagram.com/uditnc",
-      github: "https://github.com/anoonimouse",
-    },
-  },
-   {
-    id: 3,
-    name: "Anmol Mishra",
-    role: "Web Team",
-    image: "https://drive.google.com/file/d/1LIj9iiM_acmgvAPs8nzbgIH26KlgFb1b/view?usp=sharing",
-    links: {
-      linkedin: "https://www.instagram.com/iam_a.m7/",
-      instagram: "https://www.linkedin.com/in/anmol-mishra-144bab328/",
-      github: "https://github.com/anmolm-777",
-    },
-  },
-  
-  {
-    id: 5,
-    name: "Divyansh Malik",
-    role: "Web Team",
-    image: "https://drive.google.com/file/d/1ZrSB3WyKQXVAPw94kkevMXeILIigJz-d/view?usp=sharing",
-    links: {
-      // linkedin: "#",
-      // instagram: "#",
-      github: "https://github.com/beepboop876",
-    },
-  }, 
-  {
-    id: 2,
-    name: "Charitha Gattu ",
-    role: "UI/UX Developer",
-    image: "https://drive.google.com/file/d/1aWFv8_LhTpfSOsO5ChC14FFIo53DXOEW/view?usp=sharing",
-    links: {
-      linkedin: "https://www.linkedin.com/in/charitha-gattu?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-      instagram: "https://www.instagram.com/i_am__charitha?igsh=eTVjeXc0MjRqczFw", 
-      github: "https://github.com/harrypotteris?tab=repositories",
-    },
-    
   },
 ];
 

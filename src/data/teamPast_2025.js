@@ -151,7 +151,7 @@ export const pastTeam2025_2026 = [
   },{
     id: 15,
     name: "Luv Valecha",
-    role: "Team Lead",
+    role: "Web Team Lead",
     image: "https://drive.google.com/file/d/1AIEbI8_Hs44mIgRekTglIkgYlB5XayFA/view?usp=sharing",
     links: {
       linkedin: "https://www.linkedin.com/in/luvvalecha/",

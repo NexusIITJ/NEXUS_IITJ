@@ -33,6 +33,11 @@ const CoreTeamCard = ({ member = {} }) => {
     y.set(0);
   };
 
+  function convertDriveUrl(url) {
+  const match = url.match(/\/d\/(.*?)\//);
+  return match ? `https://drive.google.com/uc?export=view&id=${match[1]}` : url;
+}
+
   return (
     <motion.div
   ref={ref}
@@ -59,7 +64,7 @@ const CoreTeamCard = ({ member = {} }) => {
 >
   {/* Background image */}
   <img
-    src={getRenderableImageUrl(member.image) || placeholderImage}
+    src={convertDriveUrl(member.image) || placeholderImage}
     alt={member.name}
     className="
       absolute inset-0 w-full h-full object-cover
